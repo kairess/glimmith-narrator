@@ -49,8 +49,16 @@ class SaveWatcher extends EventEmitter {
     this.requests = Object.entries(lines).map(([path, line]) => ({
       path,
       flagName: line.trigger,
+      fireOnFirstBaseline: !!line.fireOnFirstBaseline,
     }));
     this.statePath = statePath;
+    // A handful of "welcome" lines (e.g. the tutorial) are for puzzles almost
+    // every real player has already solved before ever installing this app,
+    // so the normal baseline-and-ignore behaviour below would mean they never
+    // play. If this is the very first time the app has ever run, let those
+    // specific lines fire once anyway instead of only silently baselining.
+    this.isFirstEverRun = !fs.existsSync(statePath);
+    this.firedFirstBaselineLines = new Set();
     this.lastKnownValues = this._loadState(); // Map: `${filename}::${path}::${flagName}` -> boolean
     this.timers = new Map();
     this.watcher = null;
@@ -132,7 +140,7 @@ class SaveWatcher extends EventEmitter {
     }
 
     const values = getFlagValues(buf, this.requests);
-    for (const { path: puzzlePath, flagName } of this.requests) {
+    for (const { path: puzzlePath, flagName, fireOnFirstBaseline } of this.requests) {
       const valueKey = `${puzzlePath}::${flagName}`;
       const value = values.get(valueKey);
       if (value === null || value === undefined) continue; // not present in this save
@@ -141,9 +149,20 @@ class SaveWatcher extends EventEmitter {
 
       const previous = this.lastKnownValues.get(key);
       if (previous === undefined) {
-        // First time we've ever seen this flag: record the baseline silently.
+        // First time we've ever seen this flag: record the baseline silently,
+        // unless this line is flagged to play anyway on the app's very first
+        // run (see the comment in the constructor).
         this.lastKnownValues.set(key, value);
         this._saveState();
+        if (
+          this.isFirstEverRun &&
+          fireOnFirstBaseline &&
+          value === true &&
+          !this.firedFirstBaselineLines.has(puzzlePath)
+        ) {
+          this.firedFirstBaselineLines.add(puzzlePath);
+          this.emit('triggered', { puzzlePath, flagName, sourceFile: filename });
+        }
         continue;
       }
 

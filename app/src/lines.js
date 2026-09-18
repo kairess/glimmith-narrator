@@ -10,6 +10,10 @@ module.exports = {
     id: 'N01',
     trigger: 'HasBeenSolved',
     verified: true,
+    // Almost every player installs this app after already finishing the
+    // tutorial, so play this welcome line once on first launch even if the
+    // flag is already true instead of only silently baselining it.
+    fireOnFirstBaseline: true,
     textEn:
       'Welcome to Glimmith, Artisan. I am Elias, keeper of the window designs. We used to have a much longer introduction, but most visitors stopped listening before we reached the bridge.',
     textKo:
