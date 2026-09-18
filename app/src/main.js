@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { pathToFileURL } = require('url');
-const { app, BrowserWindow, screen, ipcMain } = require('electron');
+const { app, BrowserWindow, screen, ipcMain, Tray, Menu, nativeImage, shell } = require('electron');
 
 const { getSavesDir, getVoicesDir } = require('./config');
 const { SaveWatcher } = require('./saveWatcher');
@@ -41,7 +41,9 @@ const BASE_ICON_MARGIN = 8;
 
 let overlayWindow = null;
 let statusWindow = null;
+let tray = null;
 let hideTimer = null;
+let currentSavesDir = null;
 
 function computeScale(screenWidth) {
   const raw = screenWidth / REFERENCE_SCREEN_WIDTH;
@@ -121,6 +123,33 @@ function createStatusWindow() {
   statusWindow.loadFile(path.join(__dirname, 'statusIndicator.html'));
 }
 
+// The corner icon is deliberately click-through (so it never blocks the
+// game), so a system tray icon is the only way to actually quit the app or
+// find the log file.
+function createTray() {
+  const icon = nativeImage.createFromPath(path.join(__dirname, 'assets', 'tray-icon.png'));
+  tray = new Tray(icon.resize({ width: 16, height: 16 }));
+  tray.setToolTip('Glimmith Narrator (running)');
+
+  const menu = Menu.buildFromTemplate([
+    { label: 'Glimmith Narrator', enabled: false },
+    { type: 'separator' },
+    {
+      label: 'Open log file',
+      click: () => shell.openPath(path.join(app.getPath('userData'), 'narrator.log')),
+    },
+    {
+      label: 'Open saves folder being watched',
+      click: () => currentSavesDir && shell.openPath(currentSavesDir),
+    },
+    { type: 'separator' },
+    { label: 'Quit', click: () => app.quit() },
+  ]);
+
+  tray.setContextMenu(menu);
+  tray.on('click', () => tray.popUpContextMenu());
+}
+
 function playLine(line, savesDir) {
   if (!overlayWindow) return;
   if (hideTimer) {
@@ -143,6 +172,7 @@ function playLine(line, savesDir) {
 
 function startWatcher() {
   const savesDir = getSavesDir();
+  currentSavesDir = savesDir;
   const statePath = path.join(app.getPath('userData'), 'flag-state.json');
 
   const watcher = new SaveWatcher({
@@ -170,6 +200,7 @@ function startWatcher() {
 app.whenReady().then(() => {
   createOverlayWindow();
   createStatusWindow();
+  createTray();
   startWatcher();
 });
 
@@ -180,5 +211,5 @@ ipcMain.on('line-finished', () => {
 
 app.on('window-all-closed', () => {
   // Keep running in the background even with the overlay hidden; the app
-  // only quits via explicit quit (tray/quit menu can be added later).
+  // only quits via the tray icon's Quit item.
 });
