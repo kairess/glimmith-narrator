@@ -4,6 +4,8 @@ A companion for **The Artisan of Glimmith** that brings Elias to life as you pla
 
 [![Demo video](assets/demo-thumbnail.png)](https://www.youtube.com/watch?v=frVgAVe1fgA)
 
+▶️ [Watch the demo video](https://www.youtube.com/watch?v=frVgAVe1fgA)
+
 ## Features
 
 - **Live narration overlay** — a frameless, click-through subtitle box appears at the bottom of the screen with matching voice-over (87 lines, `N01`–`N87`) as you solve puzzles and progress through the game.
