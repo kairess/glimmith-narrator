@@ -1,11 +1,10 @@
 # Glimmith Narrator
 
-Watches the save-game directory for *The Artisan of Glimmith* and, the first time
-`AGeri/Puzzles/Data/Tutorial-1` is observed with `HasBeenSolved = true`, shows a
-subtitle box at the bottom-center of the screen and plays the matching voice-over
-from `../voices/`. Currently wired up for **N01** only
-(see `resources/Glimmith_Editorial_v2.md`); add more entries to `src/lines.js`
-to cover additional N-numbers.
+Watches the save-game directory for *The Artisan of Glimmith* and, the moment a
+tracked puzzle path is observed with its trigger flag (`HasBeenSolved`, usually)
+newly true, shows a subtitle box at the bottom-center of the screen and plays
+the matching voice-over from `../voices/`. All 87 lines (`N01`–`N87`, see
+`src/lines.js`) are wired up, from the tutorial letter through the endgame.
 
 Read-only: this never writes to your save file.
 
@@ -14,13 +13,21 @@ Read-only: this never writes to your save file.
 - `src/saveParser.js` — reads the relevant slice of the game's GVAS `.sav`
   format directly (same byte offsets as `saves/diff_saves.py` /
   `saves/set_solved.py`), no game mod required.
-- `src/saveWatcher.js` — watches every `*.sav` in the saves directory
-  (covers both save slots), debounces rapid writes, and fires a `solved`
-  event the first time each tracked puzzle path flips to solved. Already-
-  fired puzzles are remembered in `<userData>/played-lines.json` so they
-  never replay after a restart.
+- `src/saveWatcher.js` — watches every `SaveFile*.sav` in the saves directory
+  (covers all save slots), debounces rapid writes, and fires a `triggered`
+  event the first time each tracked puzzle path's flag flips to true.
+  Already-fired flags are remembered per save file in
+  `<userData>/flag-state.json` so they never replay after a restart. A
+  handful of "welcome" lines (e.g. the tutorial letter) are written in one
+  shot already-solved rather than opened-then-solved, so they're allowed to
+  fire the first time this app observes them already true, not just on a
+  false→true transition.
 - `src/main.js` — a frameless, click-through, always-on-top overlay window
-  that shows the English line and plays its audio file.
+  that shows the line (Korean or English, following the game's UI language)
+  and plays its audio file; also owns the system tray icon and its menu
+  (open log file, open the watched saves folder, **Reset progress** — forgets
+  this app's own playback bookkeeping without touching the game save — and
+  Quit).
 
 ## Run it (dev)
 
@@ -55,9 +62,10 @@ python3 toggle_puzzle_flag.py test/SaveFile1.sav test/SaveFile1.sav AGeri/Puzzle
 
 The overlay should appear at the bottom-center of the screen and play
 `voices/N01.mp3`. To test again from scratch, flip the flag back to `false`
-and delete the app's `played-lines.json` (its path is printed by Electron's
-`app.getPath('userData')`; on Linux that's normally
-`~/.config/glimmith-narrator/played-lines.json`).
+and delete the app's `flag-state.json` (its path is printed by Electron's
+`app.getPath('userData')`; on Windows that's normally
+`%APPDATA%\glimmith-narrator\flag-state.json`) — or, with the app running,
+use the tray menu's **Reset progress** instead of deleting the file by hand.
 
 **Never point `GLIMMITH_SAVES_DIR` (or run without it) at your real, live
 save while the game is running** unless you intend to test against real
@@ -70,7 +78,12 @@ to it at the same time.
 npm run dist:win
 ```
 
-This uses `electron-builder` with the `nsis` target and bundles `../voices/`
-into the packaged app's `resources/voices` folder (see `getVoicesDir()` in
-`src/config.js`). Building an NSIS installer for Windows from Linux requires
-Wine; it's simplest to run this command on Windows, or in CI.
+This uses `electron-builder` with the `portable` target (a single self-contained
+`.exe`, no installer) and bundles `../voices/` into the packaged app's
+`resources/voices` folder (see `getVoicesDir()` in `src/config.js`). Run it on
+Windows (or in CI).
+
+To also code-sign the build, set `CSC_LINK` (path to a `.pfx`) and
+`CSC_KEY_PASSWORD` before running the command; `electron-builder` picks them up
+automatically. Without a certificate from a trusted CA, the result is only
+self-signed and Windows SmartScreen may still warn on first run.

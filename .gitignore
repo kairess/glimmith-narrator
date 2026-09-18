@@ -21,3 +21,6 @@ __pycache__/
 *.pyc
 .claude/
 .DS_Store
+
+# demo video: too large for git, hosted as a release asset instead (see README)
+/demo.mp4
