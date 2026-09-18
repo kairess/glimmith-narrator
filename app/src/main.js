@@ -1,3 +1,4 @@
+const fs = require('fs');
 const path = require('path');
 const { pathToFileURL } = require('url');
 const { app, BrowserWindow, screen, ipcMain } = require('electron');
@@ -6,6 +7,19 @@ const { getSavesDir, getVoicesDir } = require('./config');
 const { SaveWatcher } = require('./saveWatcher');
 const { getLanguage } = require('./languageReader');
 const LINES = require('./lines');
+
+// Packaged Windows builds have no visible console, so mirror the important
+// startup/diagnostic lines to a log file the player can actually find and
+// send back if the app doesn't seem to be working.
+function log(line) {
+  console.log(line);
+  try {
+    const logPath = path.join(app.getPath('userData'), 'narrator.log');
+    fs.appendFileSync(logPath, `${new Date().toISOString()} ${line}\n`);
+  } catch {
+    // best-effort only
+  }
+}
 
 // All sizes below are "design pixels", tuned by eye on a 2560x1440 screen.
 // At runtime everything is multiplied by a scale factor derived from the
@@ -140,16 +154,16 @@ function startWatcher() {
   watcher.on('triggered', ({ puzzlePath, flagName, sourceFile }) => {
     const line = LINES[puzzlePath];
     if (!line) return;
-    console.log(`[glimmith-narrator] ${puzzlePath} ${flagName} (via ${sourceFile}) -> playing ${line.id}`);
+    log(`[glimmith-narrator] ${puzzlePath} ${flagName} (via ${sourceFile}) -> playing ${line.id}`);
     playLine(line, savesDir);
   });
 
   watcher.on('error', (err) => {
-    console.error('[glimmith-narrator] watcher error:', err.message);
+    log(`[glimmith-narrator] watcher error: ${err.message}`);
   });
 
   watcher.start();
-  console.log(`[glimmith-narrator] watching ${savesDir}`);
+  log(`[glimmith-narrator] watching ${savesDir}`);
   return watcher;
 }
 
