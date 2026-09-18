@@ -1,8 +1,8 @@
 # Glimmith Narrator
 
-A companion overlay for **The Artisan of Glimmith** that watches your save file and plays Elias's narration — as a subtitle + voice line — the moment you actually reach that point in the game. No mods, no save edits: it only reads your `.sav` files.
+A companion for **The Artisan of Glimmith** that brings Elias to life as you play — a beautiful story told in his own voice, narrated right alongside you the moment you actually reach that point in the game, for a deeper sense of immersion.
 
-[![Demo video](https://img.youtube.com/vi/frVgAVe1fgA/hqdefault.jpg)](https://www.youtube.com/watch?v=frVgAVe1fgA)
+[![Demo video](assets/demo-thumbnail.png)](https://www.youtube.com/watch?v=frVgAVe1fgA)
 
 ## Features
 
