@@ -1,0 +1,441 @@
+namespace,key,text
+,5928234C41C3170F5D509AB3D5656EA9,"<b>존경하는 복원의 장인께,</>
+
+    제가 그대의 작업에 지나친 제한을 둔 것은 아닌지 염려되는군요. 허나 앞으로 그대가 마주할 규칙은 아직도 많습니다."
+,123A22F54A5AFE0A9DFA108E44CF16C1,"<b>영예로운 글리미스의 장인께,</>
+
+    앞에 놓인 섬에는 그 어느 것과도 견줄 수 없는 험난한 복원의 과업이 기다리고 있습니다. 그대에게 뜻이 있다면 그 모든 도전과 영광이 그대의 몫이 될 것입니다."
+,0095BE8C47D48169B07AF4B39D432620,"<b>영예로운 글리미스의 장인께,</>
+
+    그대의 손길이 닿은 모든 유리 한 장, 한 장에서 그대의 솜씨가 빛나고 있습니다."
+,84244F29484CC92310C9C2B83EABD75D,"<input axis=""Zoom"" scale=""0.1f""/> 및 <input axis=""Zoom"" scale=""-0.1f""/> 로 확대/축소합니다."
+,D6A87DC04690A6F675C7719C0C19D977,"<input action=""PalisadeU""/> 이 포함된 셀은 항상 막다른 길이어야 합니다. <input action=""Palisade=""/> 이 포함된 셀은 항상 반대쪽에 두 개의 경계가 있어야 합니다."
+,3AC82B3D4E6217D5E47C71B5228EBBE6,클릭 및 드래그로<br>탐색
+,7F1A9E8642D6D2AC5545F0886BA1A3B4,조작법
+,C03AC1064793C975CBD5D482E78C7DB2,프레임 속도가 현재 무제한으로 설정되어 있고 V-Sync가 비활성화되어 있습니다. 이는 권장되지 않습니다. 게임이 가능한 한 많은 프레임을 생성하기 위해 모든 사용 가능한 리소스를 소모하기 때문입니다.
+,2F2F2D1C421E5169EA774080EEE7B4AA,"프레임 속도가 현재 {currentFPS}로 설정되어 있고 V-Sync가 비활성화되어 있지만, 모니터의 새로 고침 속도는 {refreshRate}뿐입니다. 게임이 표시할 수 없는 프레임을 생성하기 위해 추가 리소스를 소모합니다."
+,C91510DD4B47D2467E9B839D4C00A4BC,"영역의 크기를 보려면 <input action=""AreaCounter""/> 를 길게 누르세요."
+,7651B1FB4F86240E17DADB94EA45D6C2,"<input action=""ControllerPrimaryClick""/> 를 길게 누른 채로 드래그하여 영역을 병합하세요."
+,AF5CCC024B67045021942180C4D85EF0,"<input action=""SecondaryClick""/> 를 길게 누른 채로 드래그하여 지우세요."
+,4ED871114F4FE6AD6D242B98F3949E50,Discord 참여하기
+,C0C86A4F4F2271F5AC5A4E93BF4FF81A,질긴 고리 그리드는 바깥쪽에서부터 2가지 색상으로 번갈아 가며 층을 채울 수 있습니다.
+,F0B188AC47B63E5C4AC77F81D5E4EBBE,주변 근처에서는 경계가 T자 모양을 형성하는 것을 방지하기 위해 셀을 자주 병합해야 합니다.
+,C010CDF34FFA7F9A7593F88CC2E1473D,완벽한 윈도우
+,E96437774226F265C56FC181F55BEF0C,"전체 도형 주변에 금속 테두리를 배치하려면 <input action=""OutlineRegion""/> 를 누르세요. 이렇게 하여 확실하다고 판단되는 구역을 표시할 수 있습니다."
+,5386D6B240B03CA6479FD8B3C97C0AFA,"<input action=""SelectPreviousColor""/> 및 <input action=""SelectNextColor""/> 를 사용하여 색상을 빠르게 전환하세요."
+,89C0A52A408A0459A16FE58905DBD31A,완성된 질긴 고리 퍼즐의 경계는 항상 루프의 모음처럼 보입니다.
+,F20BA83845509F17EB945B980D25EECE,경계로 T자 모양을 만들지 않기 위해 셀을 병합해야 하는 다른 장소도 있습니다.
+,45508C1A4F6B9D193BC67C805270B8DB,"<input action=""CycleInputModes""/> 를 눌러 채색 모드, 테두리 그리기 모드, 메모 작성 모드 사이를 전환합니다."
+,A613B17D4930BC94BC9410973376DFAB,"<input action=""Undo""/> 로 실행 취소, <input action=""Redo""/> 로 다시 실행, <input action=""Restart""/> 로 다시 시작하세요."
+,2E22CF1D47B4DCFE77FE2789292D8883,"탐색하려면 <input axis=""Up"" scale=""-1.0f""/> 를 사용하세요."
+,86F8DCB04B5A4C7EAFD04AB629817813,"<input action=""OutlineRegion""/> 를 사용하여 완성된 영역의 윤곽을 표시하면 규칙에 어긋나는 부분을 더 쉽게 찾을 수 있습니다."
+,5652A46F4B2A2C43A739DCA77D753137,"두 셀 사이에 테두리를 추가했을 때 + 모양이 되는 경우, 해당 두 셀을 즉시 합칠 수 있습니다!"
+,BA26AE6449AAD02F6A7C8A910C7A72BD,"<input action=""FloodPaint""/> 를 눌러 영역 전체를 색으로 채울 수 있습니다."
+Overworld_Campaign.BP_StainedGlassPlinth20,F260F0154AF4242DF567209524CA6F95,도형 창고
+Overworld_Campaign.BP_StainedGlassPlinth21,D79239C844857F9A8D24FBB1CB840B6E,폴리오미노
+Overworld_Campaign.BP_StainedGlassPlinth22,A25A7AC34235ECB32190268912BC74E1,정밀한 넓이
+Overworld_Campaign.BP_StainedGlassPlinth23,1A568BA94C0FC64435DD5FA80CEBB913,어우러진 모양
+Overworld_Campaign.BP_StainedGlassPlinth24,BD6729454E2BB70A3CF50D81E04A5C21,숲길 입구
+Overworld_Campaign.BP_StainedGlassPlinth26,CD5605F34F58F683DC57AA97862B2DA3,벽돌무늬
+Overworld_Campaign.BP_StainedGlassPlinth27,6C02689C47C66B23D15CD9A5CB27A61B,불평등
+Overworld_Campaign.BP_StainedGlassPlinth28,A6CA49934291E8EB677E68903608DED0,질긴 고리
+Overworld_Campaign.BP_StainedGlassPlinth29,8A3046194C8C5C8D0C08B48A628F3720,감시탑
+Overworld_Campaign.BP_StainedGlassPlinth30,335E225F4CC2BD801B0A149F290D36D5,넓이의 차이
+Overworld_Campaign.BP_StainedGlassPlinth31,24CB3FC94F8B13948E3106BED79120D4,생울타리 미로
+Overworld_Campaign.BP_StainedGlassPlinth32,E994E7FC467D028784671DA18F3352F6,나침반
+Overworld_Campaign.BP_StainedGlassPlinth34,E08673434800D5C5F7B753A8E99B22C5,한적한 정원
+Overworld_Campaign.BP_StainedGlassPlinth35,9A4A40344505D197AEF279A8EA3875B1,나선형 섬
+Overworld_Campaign.BP_StainedGlassPlinth_1SPR,F8106164469DA6134B61FDB5AE63B840,유일
+Overworld_Campaign.BP_StainedGlassPlinth_AllDiff,571E0FE04BE85933AFF4D7BC1859DC11,불일치
+Overworld_Campaign.BP_StainedGlassPlinth_AllSame,9DD5EE9545AD9C35CC9B65AF76B14CAC,일치
+Overworld_Campaign.BP_StainedGlassPlinth_AreaNumber,09DA53E44BAE24712B1F0B8B5DCE1E20,넓이의 수
+Overworld_Campaign.BP_StainedGlassPlinth_Bridge,69D51BC4414A1E3F507BF08D650905DB,글리미스 다리
+Overworld_Campaign.BP_StainedGlassPlinth_Gate,4E4D7A1C4FECBC71A8B3EF8820C5D3E5,글리미스 전망대
+Overworld_Campaign.BP_StainedGlassPlinth_GeminiDelta,075A9FF7469B13EFBEB41B98BB56845C,쌍둥이와 닮지 않은 둘
+Overworld_Campaign.BP_StainedGlassPlinth_MinMax,7D09C8B04C8EE29B66009489C44B3176,넓이의 범위
+Overworld_Campaign.BP_StainedGlassPlinth_NoRectangles,99FCEB314BCF0930E6B97BB73BF9F7B2,사각틀 금지
+Overworld_Campaign.BP_StainedGlassPlinth_OnlyRectangles,E907EC9942C5F746002DF1B084040E2C,사각틀
+Overworld_Campaign.BP_StainedGlassPlinth_Palisade,D0217FDF43003956E64F118635B4F913,울타리
+Overworld_Campaign.BP_StainedGlassPlinth_SameSizeCantTouch,A44918714541923C78DE0AA4343F5379,넓이 구분
+Overworld_Campaign.BP_StainedGlassPlinth_SlashPack,2A0F01724506385798F3F5A6CB19C556,장미창
+Overworld_Campaign.BP_StainedGlassPlinth_Zone2Mixed,F2B50AFF474DB97C0586F598A4B373F5,성문
+Overworld_Campaign.Inequality_Tutorial_03,75C750A040B96778CE8B62B149BE3B0A,이런 퍼즐은 메모 작성 기능을 사용하면 더욱 수월하게 진행할 수 있습니다.
+Overworld_Campaign.No3way_Tutorial_03,A7643CBB4BA22029E0A4B887BE3DBE9D,경계가 T자 모양을 만드는 곳에서는 가장자리 그리기 도구로 십자로 연장하세요.
+Overworld_Campaign.No4way_PuzzleCube40,EF4647BA435EB21E04AC61BA3CE6666E,Shift + 왼쪽 클릭으로 완성된 구역의 윤곽을 표시하면 규칙에 어긋나는 부분을 더 쉽게 찾을 수 있습니다.
+Overworld_Campaign.No4way_Tutorial_03,9D5A9206432C450EF22DD78ED07F531C,이 규칙은 “테두리가 +자 모양을 이루어서는 안 됩니다”라고도 설명할 수 있습니다.
+Overworld_Campaign.No4way_Tutorial_06,617A6F134C7DA963420F288FC83490BF,한 구역의 꼭짓점이 다른 구역의 꼭짓점과 맞닿으면 4개의 테두리가 한 점에서 만나게 되므로 주의해야 합니다!
+Overworld_Campaign.Palisade_Tutorial_05,995526214732CC526D9CC08FD6016164,"하나의 테두리 선 양쪽에 같은 구역이 위치할 수 없음을 유념하십시오. 즉, 닫히지 않거나 끝이 남는 테두리는 허용되지 않습니다."
+Overworld_Campaign.Palisade_Tutorial_07,2EBC3E414D559D650EA826B0485E85D2,이런 퍼즐에서는 테두리 그리기 모드를 사용해 확실하다고 판단되는 경계선을 표시해 두면 많은 도움이 됩니다.
+Overworld_Campaign.PolyPuzzleCube23,4088F75E428F481175BD11B965DBC4D5,구역 전체를 한 번에 색칠할 필요는 없습니다. 형태를 이루는 일부 칸만 미리 색칠해 두는 것도 도움이 될 수 있습니다.
+Overworld_Campaign.PuzzleCube51,82F6CED145BA5A27B1B4B09605CA87EE,칸 수가 많은 퍼즐에서는 함부로 추측하다 큰 곤란을 겪을 수 있습니다. 확실하다고 판단되는 부분만 색을 칠하는 것이 좋습니다.
+Overworld_Campaign.PuzzleCube55,A14C42A349CB7515D8D18E868FBA0D4A,"퍼즐의 두 번째 법칙: *결코* 이어질 수 없는 칸 두 개를 찾았다면, 그 사이에 경계선을 그리도록 합니다!"
+Overworld_Campaign.PuzzleCube63,CDBA400B4DE6A3A92566B189B41DBE91,퍼즐의 첫 번째 법칙: *반드시* 이어져야 하는 칸 두 개를 찾았다면 바로 병합해 줍니다!
+Overworld_Campaign.PuzzleCube_01,0AA137B1414B025275F5A2A55B0A7BFD,구역을 클릭한 채로 드래그하여 병합할 수 있습니다.
+Overworld_Campaign.PuzzleCube_01B,0735BF81412FDCBC8356F09C42FB2E72,마우스 오른쪽 버튼 클릭 후 드래그하면 색을 지울 수 있습니다.
+Overworld_Campaign.PuzzleCube_02,8B117F244A9D313FE0FC9BAD63C3771C,주어진 형태는 회전된 모양으로도 그릴 수 있습니다
+Overworld_Campaign.PuzzleCube_03,D23827B140C523EF4E8B1DA5E7A1DB63,다음 단축키를 사용할 수 있습니다. Z 키: 실행 취소 / Y 키: 다시 실행 / R 키: 처음부터 재시작
+Overworld_Campaign.PuzzleCube_04,682284D842300328BCE83F8696ACA765,"<input action=""Palisade^""/> 이 포함된 셀은 영역의 모서리에 위치해야 하며 두 개의 다른 셀에 연결되어야 합니다."
+Overworld_Campaign.PuzzleCube_04,891D87B64D437E50686A6F8490C6C096,퍼즐을 완료한 후에도 자유롭게 색을 변경할 수 있습니다.
+Overworld_Campaign.PuzzleCube_05,15A0315442A362217813CEAB9A61F0D7,주어진 형태를 거울 대칭으로 뒤집어 그리는 것도 허용됩니다.
+Overworld_Campaign.PuzzleCube_06,539B064A435E36A6AB6DADA5F1157059,격자의 교차점에서 점선을 따라 드래그하여 금속 경계선을 놓을 수 있습니다. 확실하다고 판단되는 테두리를 표시할 때 사용합니다.
+Overworld_Campaign.PuzzleCube_07,C85FB19F401B81BF4AE8F9B30D37D37F,"1~9 숫자키, 또는 마우스 휠로 색을 빠르게 변경할 수 있습니다."
+Overworld_Campaign.PuzzleCube_08,78A8EE8F44CEE1E53191A2A3767955A4,"Tab 키를 눌러 채색 모드, 테두리 그리기 모드, 메모 작성 모드 사이를 전환합니다."
+Overworld_Campaign.PuzzleCube_09,FA00B4DB4698516E92590682C4EB31B9,테두리 그리기 모드에서 각 구역의 경계선만 올바르게 구분해 퍼즐을 완료하는 것도 가능합니다.
+Overworld_Campaign.PuzzleCube_10,D558372D409A50E2712FD0AB38D14E52,Shift + 왼쪽 클릭이나 휠 버튼을 클릭하면 선택된 형태의 둘레로 금속 테두리가 그려집니다. 이렇게 하여 확실하다고 판단되는 구역을 표시할 수 있습니다.
+Overworld_Campaign.PuzzleCube_10a,48D09BB9484C8879DBBA1AB2E4E46ABF,퍼즐은 언제나 논리로 해결할 수 있습니다. 추측은 전혀 필요하지 않습니다.
+Overworld_Campaign.PuzzleCube_10b,D8E402FF469310F53D8D13AF9C15125E,각 퍼즐에는 단 하나의 고유한 해답이 있습니다.
+Overworld_Campaign.PuzzleCube_10c,C42669994B5486F6F2A4DF86CC3110DA,퍼즐 초반의 실마리가 바로 보이지 않을 수 있습니다. 추측하기보다는 서로 확실히 이어져 있다고 판단되는 칸부터 병합해 보시기 바랍니다.
+Overworld_Campaign.PuzzleCube_11,5D720BE944AC71AB95AEC29EF72EAB16,경계선은 항상 서로 색이 다른 두 구역을 나누는 테두리여야 합니다.
+Overworld_Campaign.PuzzleCube_GD8,034874744F01BA62BC8674ABE44F8F64,색칠하거나 메모를 활용해 각 칸에 들어갈 구역의 형태를 표시해 두면 퍼즐을 푸는 데 도움이 됩니다.
+Overworld_Campaign.PuzzleCube_SlashPack_Tut3,B501CF82413D1EFB93F5D88757D95037,Q 키를 눌러 구역 전체를 한 색으로 칠할 수 있습니다.
+Overworld_Campaign.PuzzleCube_SlashPack_Tut5,6184373C40C6D68A6DCCB1891DBB0E6F,하나의 테두리 선 양쪽에 같은 구역이 위치할 수 없음을 유념하십시오.
+Overworld_Campaign.SizeXPuzzleCube04,3C2F15E445C664A1F65FD28B8C6C1248,Ctrl 키를 누른 채 구역 크기를 확인합니다.
+Overworld_Campaign.TutorialSign,270BE365419FF8F15D8950ADD1E00D91,클릭 및 드래그로<br>탐색
+Overworld_Campaign.TutorialSign2,F75E382A40E113DE1ABC1AAB85E96F92,스크롤하여 화면을 확대·축소합니다.
+Overworld_Campaign.TutorialSign3,B9CD430B4F26EAD9A5EEFA83CEE10E79,진행 상황은<br>자동으로 저장됩니다.
+Overworld_Campaign.TutorialSign4,8F02E599411BA94F760BE4B05E44C145,카메라를 움직이며 둘러보면<br>숨겨진 퍼즐을 발견할 수 있습니다.
+Overworld_Campaign.TutorialSign4,004C9DCA4EA38363074130978DF372EF,카메라는<br>회전할 수 없습니다.
+PuzzleUIWidget,RangeRuleText,모든 구역의 넓이는 <b>{0}칸 이상 {1}칸 이하</>여야 합니다.
+PuzzleUIWidget,RangeRuleTitle,넓이의 범위 ({0}-{1})
+RuleData,1911BCDC41EF2462BE44ECB7318A2F48,<b>모든 구역</>은 서로 <b>같은 형태</>여야 합니다.
+RuleData,64F21CD245418C8F4B6D40B88114FDF8,<b>모든 구역</>은 <b>사각형</>을 이루어야 합니다.
+RuleData,DBD0802D46DADAF0783D1E80B6516431,<b>모든 구역</>은 서로 <b>다른 형태</>여야 합니다.
+RuleData,AE971780472AF81F857B1784C55E4639,단서가 놓인 점을 <b>포함하거나 이에 맞닿은</> 구역의 <b>개수</>를 표시합니다. 
+RuleData,BE0E0B8E4F269FF74F22B2A4FF6873D8,<b>각 구역</>은 모든 기호를 <b>정확히 하나씩</> 포함해야 합니다.
+RuleData,F3877AAC470122500820ABAFD749F837,<b>이웃된 구역</>은 서로 <b>다른 넓이를</> 가져야 합니다.
+RuleData,45A3382D43EA3BE7F9B741BED46CF668,이웃된 <b>구역</>은 서로 <b>다른 형태</>여야 합니다.
+RuleData,B6751BCC4120DDF933C0D8BC8C0F1FDF,그 어떤 구역도 <b>사각형</>을 이뤄서는 <b>안 됩니다</>.
+RuleData,7C7F8C00416A66238C1AB283C4589467,모든 구역의 넓이는 <b>최소 {0} 이상</>이어야 합니다.
+RuleData,4B2E78B44A93B126DCA4E088BDEA9040,모든 구역의 넓이는 <b>최대 {0} 이하</>여야 합니다.
+RuleData,9C8A7A4F4E66A8FD958D348A9B88246C,모든 구역은 아래의 형태 중 하나로 이루어져야 합니다.
+RuleData,FF80FF02447335A02328768FC23CA722,모든 구역은 정확히 <b>{0}</>칸의 넓이여야 합니다.
+RuleData,523BC0584F9F8356D46723A60547F422,넓이의 수
+RuleData,1D4A0CDB46719854AA758B88D281A914,사각틀
+RuleData,C13774A24722E39BA998028072ADC4BC,벽돌무늬
+RuleData,272AEBC040104AF094A51F9F26CEE541,나침반
+RuleData,619835EC458BE28F406668A683117453,해당 칸보다 네 방향으로 더 멀리 있는 같은 구역 칸 수입니다. 단서가 없는 방향이 칸 수 0을 뜻하진 않습니다.
+RuleData,1B2CF8544CC3428A6176E797B5E9C34F,닮지 않은 둘
+RuleData,EA6CE0DB498EAD2593F4AD80996C0521,<b>해당 칸이 포함된 구역의 형태</>를 나타냅니다.
+RuleData,ACF593A8499A8177AEE86FBED0770D2B,넓이의 차이
+RuleData,49E336F241E7F575A6F22E9357E7DA31,각 구역은 정확히 <b>하나의 기호</>를 포함해야 합니다.
+RuleData,77E86CA349F70CB83847E2A500846F7A,잔상
+RuleData,A861EA9944067694EA7237B9A2CF51F2,쌍둥이
+RuleData,2B49C41746B8C172843075ABEDA2EDCC,인접한 두 구역이 가지는 <b>넓이</>의 <b>차이</>를 나타냅니다.
+RuleData,E6ABC63A4E6DF77AA272D0BA52A1E164,불평등
+RuleData,807760024D1ACA9751FE9C958458647A,질긴 고리
+RuleData,7DB04A174E37F8AB8B0BD586577ED2D9,일치
+RuleData,5E74FBA445ABD59A6F8EC880584CA2DA,최대한의 넓이 ({0})
+RuleData,2C00C6C045A847A8308DB689F85D0B8B,어우러진 모양
+RuleData,338B76144CF75DB26C41959D8D395C27,최소한의 넓이 ({0})
+RuleData,C89AFB8A4D810DD066FF9485E811572C,불일치
+RuleData,7D6B921047117CDB59EDF09B6024050C,사각틀 금지
+RuleData,20575CC1478DE6DF1EB3698460EE5C66,울타리
+RuleData,6E60598C4097F6E37901B1993058844E,폴리오미노
+RuleData,A24B653A416980122B4470B1BDB8D31F,정밀한 넓이 ({0})
+RuleData,B87ED0164F4A79CEC63D78886FFD3366,장미창
+RuleData,6FFBB24F40ADF0E9B0291EB36285115E,도형 창고
+RuleData,100C791C472A565AB823D89EA75A478C,해당 칸이 포함된 구역의 <b>넓이</>가 몇 칸인지 표시합니다.
+RuleData,C2FB6A1B417EAFA7E74754B9AA5DC78E,해당 칸의 <b>테두리</>로 완성해야 하는 <b>모양</>을 표시합니다. 표시된 모양은 회전된 형태도 허용됩니다.
+RuleData,E4858B23465E54C128E984A839666954,넓이 구분
+RuleData,DEC087054039B1DCBC1AD59122C666AD,유일
+RuleData,CACEE64747557870DC157D8B7CCA2D3A,인접한 두 구역 중 <b>넓이가 더 작은 쪽</>을 <b>가리킵니다</>.
+RuleData,E86915E34E225153E58EFF96087A802A,이 기호에 인접한 두 구역은 서로 <b>다른 형태</>여야 합니다.
+RuleData,A8B4782D4FE454A7710CBB91610A4541,이 기호에 인접한 두 구역은 <b>동일한 형태</>여야 합니다.
+RuleData,C593A90145E30152F6446692E5137C03,한 점에서 4개의 테두리 선이 만나서는 안 됩니다.
+RuleData,83E2C6754B8F5BB0740091A306DC8CCC,한 점에서 정확히 3개의 테두리 선이 만나서는 안 됩니다.
+RuleData,7EE292DA4DDF9DC794D811A0E52C124F,그 어떤 구역 안에도 이 형태가 들어맞아서는 안 됩니다.
+RuleData,79C2BE9847A01963B8361389BF6DA7C7,감시탑
+ShapeBank,ShapeBankRuleTextPlural,모든 구역은 아래의 형태 중 하나로 이루어져야 합니다.
+ShapeBank,ShapeBankRuleTextSingular,모든 구역은 아래 형태로 이루어져야 합니다.
+WBP_ControlsPanel,30882F81488F93A1AB12B78E82A13889, 또는 
+WBP_ControlsPanel,2D01F5644A94393B7CBF69864E62EB7D,입력 모드 변경
+WBP_ControlsPanel,255D4A514DAEE5FCA0542F853042609C,색상 선택
+WBP_ControlsPanel,9B3DF1744E605BCA92BA908AFB55DEEA,색 그리기 또는 구역 병합
+WBP_ControlsPanel,EEF2FF5E40963CF271109EB4D354D412,조작법
+WBP_ControlsPanel,2FE1518D447033A9B1466DA5D16EC788,테두리 그리기
+WBP_ControlsPanel,DCDDBE354BC3918F7CA3D7B15407966B,색상 또는 테두리 지우기
+WBP_ControlsPanel,CC5544C4426AFA39BD6B7BACA606EDCD,메모 지우기
+WBP_ControlsPanel,38BF1D464DF4D77026CC1595562364CE,길게 눌러 넓이를 측정
+WBP_ControlsPanel,20409B394811A25A70B6908EBF19225E,다음 또는 이전 색상
+WBP_ControlsPanel,FB0FCDB543C6D1CBAC985C9FAC37A5B4,테두리로 형태의 윤곽 그리기
+WBP_ControlsPanel,7C59F0D04A15277BE9D7598C5A642CA0,색 채우기
+WBP_ControlsPanel,8F0729A24B684A747ED93E81BEC11158,누름
+WBP_ControlsPanel,FD8644F3489D0C93210A5C8CC0F58706,다시 실행
+WBP_ControlsPanel,D5A09B8548C5BE481176709FAD66683A,다시 시작
+WBP_ControlsPanel,9AA43C6B4503CA80DDB7778716D055FE,실행 취소
+WBP_ControlsPanel,27D817B149FA33A93F984CB80F98CA99,기본 색상 팔레트 선택
+WBP_ControlsPanel,29F0D7404E5BE947C338F6AB080D704C,[클릭 후 드래그]
+WBP_ControlsPanel,E860373F48114A6A8A617682218D7C6D,[교차점에서 드래그]
+WBP_ControlsPanel,1475AAAE43757A1804391F877086F0F9,[길게 누르고 드래그]
+WBP_ControlsPanel,5CE7B01348CDC18F0C45FBA571A9ACF3,[오른쪽 클릭]
+WBP_ControlsPanel,26AE961D49BDFBE8C48A149BDB61369C,[마우스 휠]
+WBP_ControlsPanel,345574EE4593CA5E9DE472A90180D0AE,[Shift + 왼쪽 클릭] / [휠 버튼 클릭]
+WBP_Credits,22A0F6CA4F285FF61C5F2682F2790628,983 팀
+WBP_Credits,D96239CE4DEB450688E486BCED80358A,아티스트
+WBP_Credits,5CC8788448CCBB2AF6EB8A83812DA61D,제작진
+WBP_Credits,0E51FF4D4ECE9F780B049F9FEACAE0CB,총괄 디렉터
+WBP_Credits,DF9FD5E84127686B5CB2B4BDDAD37881,로컬라이제이션 팀
+WBP_Credits,872B7BE34946AC0F1E6218B259825C5E,프로그래머
+WBP_Credits,F066D88C4B8D1FD6D6DC40BE50FA8961,퍼즐 기획
+WBP_Credits,FFBB9A1D49D8E3C507A0208AF90C47B9,퍼즐 기획 총괄
+WBP_Credits,8CBCF9D0468667C8F53FD8B379DB21AA,테스터 & Special Thanks
+WBP_Credits,5FC067D54DAAEBF16F8576959B795A0E,트레일러 성우
+WBP_EscapeMenu,ED7C605041CDD40F5F214B948451A56D,메인 메뉴
+WBP_EscapeMenu,DA721EC74F7F35CB58CDB3BEB6305D74,종료
+WBP_EscapeMenu,CB2B4A574174DEA9844BAF83A052CBA4,계속 진행
+WBP_EscapeMenu,4AC5C3FC4E2905ED6E3D7A8C3DEDA954,설정
+WBP_MainMenu,7B594D2F4ACA37CA820681823C0040C7,돌아가기
+WBP_MainMenu,EBF8D28C422A3307A8CABAA92A2F53E5,돌아가기
+WBP_MainMenu,4A6D327B4C309047802E8BA75885ADD8,취소
+WBP_MainMenu,F0AF858F4C17E24096CF7DA7D6B2161F,취소
+WBP_MainMenu,03DA79A04A434DED7FB559A2B6D1AB94,확인
+WBP_MainMenu,471A147E4C3EB7156222899A461E6580,제작진
+WBP_MainMenu,8A7F3E934BF7DD2ED7E5C1A20BC9D2CA,슬롯 {Num}의 저장 데이터를 삭제합니까?
+WBP_MainMenu,2E3831B24899A8F29A5689B8B15E62B0,저장 데이터 삭제
+WBP_MainMenu,56D3A9EC472DAEF6CCEB9298CCF3CB40,백업 불러오기
+WBP_MainMenu,3BCF2E574A89E5A9840E21B713A059F7,로딩 중
+WBP_MainMenu,5E8D8BAC435CA9E8C5690A9844379535,새 게임
+WBP_MainMenu,289B01C04B320134238E41BDAE813250,확인
+WBP_MainMenu,C8A8C75B4852E26BF7C3669A8BB765D1,시작
+WBP_MainMenu,08A362C04835108137453E89049F5FA3,종료
+WBP_MainMenu,57544E89483E270495B8D7B3521039DB,종료
+WBP_MainMenu,1E4F697042C5ECCE147385844FF3C2AC,설정
+WBP_MainMenu,236BDEEC47DDF94EAE8D498ACF863673,설정
+WBP_MainMenu,3A4EF3D046529EE660FB72B87578B349,슬롯 1
+WBP_MainMenu,7E1A308A4D43C2AB39450DB48049ABF9,슬롯 1
+WBP_MainMenu,75E7FF964C86E31909DC27BC9510D224,슬롯 2
+WBP_MainMenu,C293A8DE435E6947A4F432BF512DCF56,슬롯 2
+WBP_MainMenu,27F2A58F4AEFC650B96DB3946C17757D,슬롯 3
+WBP_MainMenu,C87986AF47422965D6639998F8600FFC,슬롯 3
+WBP_MainMenu,532F0F484001B7BEBD055E9714A7AD58,"세이브 파일을 불러올 수 없습니다. 게임을 재시작한 후 다시 시도해 주세요. 문제가 지속되면 지원팀에 문의하거나 다음 위치에서 백업을 복원하세요:
+C:\Users\[사용자 이름]\AppData \Local\Geri\Saved\SaveGames"
+WBP_MainMenu,696756FF4339943AA279C7B64258A51E,주의!
+WBP_MainMenu,A00F2A9C41F2EC53A5CB3387C4B377A6,워크샵
+WBP_MainMenu,01D530C748692F25862CBDA950AE6498,{numSolved}개 완료
+WBP_MainMenu,E6E4FA2C4E71261229B85B9402F555AB,{numSolved}개 완료
+WBP_MainMenu,FE2AE5A644BFD7892744899A49F45C28,{numSolved}개 완료
+WBP_Note_CompletionStats,346ACBB348ACE7A46274E8B3ADB43AA6,"<b>훌륭합니다, 장인.</>"
+WBP_Note_CompletionStats,1680D4DF485093E46AB091B8019441F3,<red>글리미스 전체 복원 진행 상황:</>
+WBP_Note_CSides,24B0A04140266D2296FEB9A6505E2E2B,<red>더불어 저는 묵직한 도안들을 이 땅 도처에 가져다 붉은 단상 위에 공들여 올려 두었습니다.</>
+WBP_Note_CSides,7B58A49B4B67F63EE0B9D8B5E68F48D6,그림 1
+WBP_Note_CSides,BA3E0CD84179486EF06D69978E661DE3,만일 그 도전에 응한다면 그대는 글리미스의 굳건한 신임과 존중을 한몸에 받게 될 것입니다.
+WBP_Note_CSides,0F04CC3E46F7666E7A8BD8806A6B6663,"깊은 감사와 함께,
+~ 엘리아스 비디무스"
+WBP_Note_FinalChallenge,40CA659F4E0A559E3FDAC28169F9D590,"<red>열 개의 구역을 빠짐없이 완성한 그때, 비로소 새로운 길이 그대 앞에 열릴 것입니다.</>"
+WBP_Note_FinalChallenge,DC80BF854A37D41B42597BA23924CEBF,그림 1
+WBP_Note_FinalChallenge,5A01208B47AF81CB439088AFDE1FFD79,아울러 창에는 새로운 마법이 깃들어 있습니다. 제가 그토록 깊이 숨겨 두었던 작품들도 이제는 그 모습을 드러낼 것입니다.
+WBP_Note_FinalChallenge,10CE59F043DF3140E358E8A99DA1A908,"깊은 경의를 담아,
+~ 엘리아스 비디무스"
+WBP_Note_Metallicize,C7560F814D7E9078F7136CB85E8BEE23,"<b>존경하는 복원의 장인께,</>
+
+    앞에 놓인 구역에는 실로 방대한 양의 도안들이 펼쳐져 있습니다. 그러나 염려치 마십시오. 그중 일부만으로도 창을 복원할 수 있습니다."
+WBP_Note_Metallicize,FF80998344E3CFD0C8C1B2BA2BD99F25,<red>만일 야심이 그대를 이끈다면 더 많은 장식을 완성하여 창틀에 금속의 광채를 입혀주십시오. 더 많은 업적을 이룰 기회가 드러날 것입니다.</>
+WBP_Note_Metallicize,41FAA92C4EDAC4551973F7AC06907AB7,"한 구역이 온전히 완성된다면, 그 곳의 창틀은 마침내 금빛으로 물들게 될 것입니다."
+WBP_Note_Metallicize,82EF7C7F49360C03684A5780B9BE9D18,"진심을 담아,
+~ 엘리아스 비디무스"
+WBP_Note_OptionalArea,4F6F77BA4E7B7BCA2FCFE6A7C92A3A8D,"<red>이 구역의 복원은 그대의 선택에 맡기겠습니다.</>
+<red>창 네 개가 완성되는 순간, 곧장 다음 장소로 나아가셔도 됩니다.</>"
+WBP_Note_OptionalArea,6EDBBA274C8CD1C4928B2EB9CB17CA36,그림 1
+WBP_Note_OptionalArea,61E3EEDD4B16C5926109E3B2EAA19B4D,그대의 근면함과 흔들림 없는 끈기에 경의를 표합니다.
+WBP_Note_OptionalArea,406BB67146FC2EC77E921BBC2CB29074,"진심을 담아,
+~ 엘리아스 비디무스"
+WBP_Note_Welcome,CC4EA3BE4EE92F67B0D9D7A62F460E03,"<b>친애하는 복원의 장인께,</>
+
+    글리미스의 옛 영광을 되찾아 달라는 저의 청을 기꺼이 수락해 주신 데 감사드립니다.
+
+이에 관하여 그대에게 부탁드리고자 하는 바는 단 한 가지뿐입니다."
+WBP_Note_Welcome,219FF161475740E3D1D4958436C22888,<red>유리조각 하나하나를 다듬을 때에 정해진 규칙을 한 치도 벗어나지 말고 충실히 지켜 주십시오.</>
+WBP_Note_Welcome,13870D434BCA3A32760043A40D7BAF14,그림 1
+WBP_Note_Welcome,ECDD5B9644A88FD0DCC55FB02241A9A5,제가 중요히 여기는 것은 오직 형태입니다. 색채에 관해서만큼은 그대의 창의력과 영감을 마음껏 발휘해 주시기 바랍니다.
+WBP_Note_Welcome,C22D257B445DAD49E0BF5297956C8B64,"진심을 담아,
+~ 엘리아스 비디무스"
+WBP_Note_Windows,9EC1F6014A8CF8B5D2D3118F148F736F,"<b>존경하는 복원의 장인께,</>
+
+    이 편지가 그대에게 충만한 기운과 창작의 열의를 안겨 주기 바랍니다.
+
+아직 해야 할 일이 많이 남아 있습니다"
+WBP_Note_Windows,B44FA5194BD8BB86C842D3A1EAD68732,<red>이 창틀들은 그대가 이룬 복원의 진척을 보여 주고 있습니다.</>
+WBP_Note_Windows,C7BB1CBF4D9DF6802BE4F7B4252F8EA3,그대가 복원하는 유리 장식 하나하나가 창을 채워 나갑니다. 창을 온전히 완성시켜 다음 여정을 이어가기 바랍니다.
+WBP_Note_Windows,06D5E8A24D55CC1EC6967FAB41EB4378,그림 1
+WBP_Note_Windows,686A6D54407BDFB1CF4077885620FBC6,그림 1
+WBP_Note_Windows,37BAA34E44670B3402C181B6719732D8,"진심을 담아,
+~ 엘리아스 비디무스"
+WBP_PuzzleCounter,8DEEDD3343BD401A5A9B78BEEAFD242C,"<input action=""TogglePuzzleHighlights""/>: 숨겨진 퍼즐 숨기기"
+WBP_PuzzleCounter,90715CA84754A6D3A9AF70A4E742070E,"<input action=""TogglePuzzleHighlights""/>: 숨겨진 퍼즐 표시하기"
+WBP_PuzzleCounter,F18C935E48E77AE07F95B4A417AEE955,"복원
+진척도"
+WBP_PuzzleListEntry,A03F22EF429702A706D3AC9F5057E1F1,더 많은 퍼즐 찾기
+WBP_PuzzleListEntry,4D8AB1F743998EFC4FA1B0832E391473,새로운 퍼즐
+WBP_PuzzleUI,F485BF304EF45F30962CF7BD5C46186B,"<h1>만만치 않은 난제입니다!</>
+
+난이도 5-6의 퍼즐은 <b>매우 어렵습니다</>.
+
+꼼꼼한 논리와 고난도의 기법, 그리고 많은 끈기가 필요합니다.
+
+특히 퍼즐 초반의 실마리가 눈에 잘 띄지 않을 수 있습니다.
+
+이 퍼즐은 <b>선택 사항</>이니 도중에 막히면 나중에 다시 도전해도 좋습니다."
+WBP_PuzzleUI,4242A0DD4D300723950E188AEB4030D7,"<h1>추가 퍼즐</>
+
+일부 지역에는 창문을 도금하는 데 필요한 것보다 더 많은 퍼즐이 있습니다.
+
+모두 찾을 필요는 없습니다.
+
+나중에 퍼즐의 실제 수와 모든 것을 찾는 방법을 발견하게 됩니다."
+WBP_PuzzleUI,9F751D9D40611892B572519F4490E45C,"<h1>극한의 난제입니다!</>
+
+난이도 7은 이 게임에서 가장 어려운 퍼즐로 <b>극악의 난이도</>를 자랑합니다.
+
+다른 퍼즐 대부분을 완료한 뒤에 도전하는 것을 권장합니다.
+
+경험이 쌓이면 이 어려운 문제를 풀어낼 미묘한 요령과 기술을 하나씩 익히게 될 것입니다."
+WBP_PuzzleUI,FA75B8364875F8883F7128B1F25CAEE1,"<h1>알고 있는 것은 바로 적어둡니다.</>
+
+까다로운 퍼즐일수록 <b>부분적으로라도 확정된 내용을 기록</>하는 것이 중요합니다!
+
+같은 구역에 속한다고 확신하는 칸은 병합합니다.
+
+구역의 전체 형태를 모르더라도 확실한 테두리는 즉시 그려 줍니다.
+
+이렇게 아는 사실을 하나씩 채워 넣다 보면 새 단서가 드러나고, 결국 퍼즐 전체가 완성됩니다."
+WBP_PuzzleUI,85AB8C7E4A530263DAF38ABF478DC5EC,"<h1>비밀 퍼즐</>
+
+일부 퍼즐은 숨겨진 장소에 감춰져 있습니다.
+
+완전히 선택 사항입니다.
+
+나중에 놓친 퍼즐을 찾는 방법을 발견하게 됩니다."
+WBP_PuzzleUI,73257C604F8679098F71028455D67A21,규칙 추가:
+WBP_PuzzleUI,F8B9260C4C0FAF363F8A0383908DF8C9,그리드 크기를 조정하시겠습니까?
+WBP_PuzzleUI,C74A40584176B202A278CBB44DAABCB0,넓이의 수
+WBP_PuzzleUI,927ACC454F7CD8294AD842875793F8CA,테두리
+WBP_PuzzleUI,B3DB871648734B01244D7D9F484F8AE2,"그리드 크기를 변경하면 그리드가 초기화되고 모든 변경 사항이 삭제됩니다.
+이 작업은 취소할 수 없습니다."
+WBP_PuzzleUI,7A4F0828437AAFB8A9ED28AFC27F4CA1,진행 상황 확인
+WBP_PuzzleUI,1D279FE94CC18DB5A63523AAEB538110,메모 지우기
+WBP_PuzzleUI,D0ED071943D54B46E9B9FF9B7E684310,색 그리기
+WBP_PuzzleUI,DE041E0E4CAE62469A538CB98F26A833,색 그리기 및 테두리
+WBP_PuzzleUI,5BF6409B401BB246CB42DFB29B1BC2B9,나침반
+WBP_PuzzleUI,8E5747034BEE0AB16950108AE79A1E70,확인
+WBP_PuzzleUI,E91704F44611D5B0111150AEAB483BFF,다음
+WBP_PuzzleUI,75AA0CCB4938351FF22947B0D832B42F,현재 형태
+WBP_PuzzleUI,4E8B01F14BFDA92E44A6319F132F88CB,닮지 않은 둘
+WBP_PuzzleUI,E62B3DDC45EAB857AFA01E93D081CFF9,넓이의 차이
+WBP_PuzzleUI,08C268BA4DDA51565D11698D14F5E8D8,난이도
+WBP_PuzzleUI,A368961A4E819AA86D78EF93006B38E1,도미노
+WBP_PuzzleUI,94C78FE24C5D639CA23BE09EF3552A16,그리기
+WBP_PuzzleUI,2D51D6C34F0475444C03EA85F687AC07,퍼즐 편집
+WBP_PuzzleUI,4332984942AED70DF95F63A9E035A85A,지우기
+WBP_PuzzleUI,2BD1B672416E6336B20F05A291427D0F,"지금까지 입력한 내용은 모두 올바르지만, 일부 구역을 병합해야 합니다."
+WBP_PuzzleUI,A3A583314885EBBE128D6E9E59813DBA,지금까지 입력한 내용은 모두 올바릅니다!
+WBP_PuzzleUI,5E4E5C614D209EBBD618979F529EF018,모든 것이 올바릅니다!
+WBP_PuzzleUI,ECE7DD4845F1E052F441358210E5D9F0,나가기
+WBP_PuzzleUI,BCB179C040F70A5BEB821FA99C1283F7,쌍둥이
+WBP_PuzzleUI,FD7B8E0F468EBE3ED69DB7B5E2CF361A,주어진 테두리
+WBP_PuzzleUI,65A38B00448995D2159D90A7F26BAB66,확인
+WBP_PuzzleUI,1CC4BA8E4E86B9CE8A482A9FC0585BC0,I-트로미노
+WBP_PuzzleUI,E159FE9F43E124960365ECBF009DB4D1,불평등
+WBP_PuzzleUI,B057DCCA4D17ED786915D183FCFEC16D,L-트로미노
+WBP_PuzzleUI,5912E37D4922F8D0B5DC0B90C5CB39CC,해답 불러오기
+WBP_PuzzleUI,4B32B230472BFA9E01EBC6818A5F0FC1,메모
+WBP_PuzzleUI,4F22AD5E41C6B08E858A0CAC79D10F10,울타리
+WBP_PuzzleUI,7152BEC54B44A7BB15890181222232B5,펜토미노
+WBP_PuzzleUI,1002DE0E41938B27324D33A1D17A0096,폴리오미노
+WBP_PuzzleUI,E119C3CA4934178F413410A5CD90464A,단서 제거
+WBP_PuzzleUI,A4B0D089401B264A40E0368CF53DED49,다시 시작
+WBP_PuzzleUI,74892A644E3B237D6ABB94B362DAB002,표시
+WBP_PuzzleUI,8819D41D44BBC3FF56E31D9441EFA64B,장미창
+WBP_PuzzleUI,F937A9614825E2662EC7938935970F3C,퍼즐 풀기
+WBP_PuzzleUI,BFEF2BB745EF65A315E048909F99C7D8,테트로미노
+WBP_PuzzleUI,7163DAE049AD3353D2CCA48895AA056D,잘못된 곳이 여러 개 있습니다. 그중 첫 번째 실수를 표시합니다.
+WBP_PuzzleUI,1875A0DC443CF4ABD4569BA99B3739C9,최소 한 개의 오류가 있습니다.
+WBP_PuzzleUI,D087E93C4C7587BBFDEC6DBBA0AAEECB,이 두 칸이 연결되어서는 안 됩니다.
+WBP_PuzzleUI,993779F4482599DD13AE3FB826F7F68A,이 두 칸 사이에는 경계선이 없어야 합니다.
+WBP_PuzzleUI,3043AC934494B87687076DA61DB519A6,칸 추가/삭제
+WBP_PuzzleUI,A9C16C0E4374F443078899B3B9858123,실행 취소
+WBP_PuzzleUI,50B8968F41BDC49A2964FDAFB984E726,감시탑
+WBP_PuzzleUI,1B06E61C447E4EA1E0474ABE6E93CE36,아직 퍼즐 풀이를 시작하지 않았습니다.
+WBP_PuzzleUI,C8B346F548877E79B9908EB05F3C955C,[-] (붙임표)
+WBP_PuzzleUI,BED16CB5450981A400B5FA84AEC4F2E1,[.] (마침표)
+WBP_PuzzleUI,49B587A2418F7D2E43A9A084840660D8,[화살표 키]
+WBP_PuzzleUI,D48DC41E4BC84F425B9822BF707FE908, [왼쪽 클릭]
+WBP_PuzzleUI,D752BC5942BBBB1FBC3E7EB8E6AD82B7,[Del]
+WBP_PuzzleUI,E9F69D4F403B0376B0218C8C7BC23F7B,[교차점에서 드래그]
+WBP_PuzzleUI,20FC626546FDF051E4F0F5AC06B56B78,[오른쪽 클릭]
+WBP_PuzzleUI,48BDBD42441DB9DA2475CD8BAAF4B949,[_] (밑줄 기호)
+WBP_PuzzleUI,3C875C024CB9C262F9253EAB1311D802,크기
+WBP_PuzzleUICompletion,FA919356424D7A8C06B08EBC2B53CCB4,다음
+WBP_PuzzleUICompletion,DDD6E14D4D700F42B7F5AE99BA04C499,나가기
+WBP_PuzzleUITutorial,9138D7CE41C4B51774DD6EA00B190A7E,다음
+WBP_PuzzleUITutorial,35D75C2D4167AE22801B7BA36DD9097E,나가기
+WBP_PuzzleUITutorial,AD0BFB88486F61754647F89DD37AC5D0,그림 1
+WBP_Settings,A50DC59548D724F6E12D289EEE4FD2C1,진행 상황 확인
+WBP_Settings,94BA8D0F44ACCB044C157EB3500A62EB,끄기
+WBP_Settings,B5EB57E048167751BF15628991752588,끄기
+WBP_Settings,F9B6E56A44D7AEECE3D72298F52C857B,끄기
+WBP_Settings,8E0EEA2849F443E3A35B0899109167F9,켜기
+WBP_Settings,B46D957C441DCEDDB907B5A6C37E7CB4,켜기
+WBP_Settings,D365BA32489E222DD4BB3283A94BFC22,켜기
+WBP_Settings,5A011995467905678C56C4888013A1E7,매우 높음
+WBP_Settings,3471D94D4DABB8931B21F7B787397EFC,프레임 속도
+WBP_Settings,180EB04D4697B74A660441B98177BE85,전체 화면
+WBP_Settings,3AB6F3D24C020D80F6B2C7B74023F57E,그래픽 품질
+WBP_Settings,05F9CECC420C220DA30E0CA70BDCF57E,버튼 숨기기 
+WBP_Settings,F02845BA433DA0776224D883942D7C4D,높음
+WBP_Settings,4838F7904F79B05EB420D6A5C72A7F24,언어
+WBP_Settings,FF095FCC477284970257D4BBF3E0168A,글자 크게 보기
+WBP_Settings,5E3016404610D5264CB7F2AE83955B0D,낮음
+WBP_Settings,B309DD714F0600D44D6934BC3A47796B,중간
+WBP_Settings,7D26C57A432030D1ACDD61A28A116153,모션 블러
+WBP_Settings,E117DE5E4AE42057912A8A84EED1DA6D,음악
+WBP_Settings,23F8FBA342F650E48ADBC2959739C02A,배경에서 음소거
+WBP_Settings,6621C18F43AF5C70E6D29A8C48236518,해상도
+WBP_Settings,4606E55347EE84614524A4BDD26161E9,화면 설정
+WBP_Settings,D40D12D848254FBE50215ABAA24B3AF4,버튼 표시
+WBP_Settings,3A38AF254A62DC48EC9DCD9F3C9F720B,오류 표시
+WBP_Settings,1FBBF3A847BD6715191D579A6E2C4CC6,측면 패널에서만
+WBP_Settings,9A321C6B4B9A331A8B6006867AB6EE38,효과음 
+WBP_Settings,D3547AD246256DDC45B133A0ED6AF508,제한 없음
+WBP_Settings,EAF51B39436093449E135AA822D10BE7,창 모드
+WBP_Settings,2055EA2F416EC5BE4DD3A0BB5FC6A78C,전체 화면 창 모드
+WBP_SettingsMenu,F88A782A4F6F0BCB41A94F84CD25BE97,동의
+WBP_SettingsMenu,7DF8C27E4A90E3F1946B63A828491FF8,적용
+WBP_SettingsMenu,D03077264E989332BFAC6B8920EE055E,해상도 설정 적용
+WBP_SettingsMenu,78D236FD4787991CD4449183F130ED6A,돌아가기
+WBP_SettingsMenu,08D2775B46B52BB64F701C8EE17EB52B,취소
+WBP_SettingsMenu,61FD9BF54D2BEC524A859BBDFB8F86D4,설정
+WBP_WorkshopMenu,0BD41C0240CB26112007299FEDDCC47A,이 퍼즐을 게시하면 Steam 창작마당 이용 약관에 동의하는 것으로 간주됩니다.
+WBP_WorkshopMenu,C08DE5164DBD7DCD2A72FBAB130ACF4F,아직 게시할 수 없습니다.
+WBP_WorkshopMenu,35C88AFC455CC434730D6BAA303162C1,취소
+WBP_WorkshopMenu,592CE26E48FEE9D969D307968D54658F,취소
+WBP_WorkshopMenu,67919381429BBB6C7B940DB9E6846184,취소
+WBP_WorkshopMenu,BB0E21344F93A807CDD76A9913F65A14,취소
+WBP_WorkshopMenu,2395E7154DA2C90DFD4039A5FC833688,커뮤니티 퍼즐
+WBP_WorkshopMenu,308BD720493E115F77DAB48CC253429D,정말 삭제하시겠습니까?
+WBP_WorkshopMenu,977E41FB42EEDA175F32139A05D42920,삭제
+WBP_WorkshopMenu,B783364B4C7A52F694E71C9CD25C06BF,삭제
+WBP_WorkshopMenu,C1E9270E4BB734AF11572990E31A9BE3,설명
+WBP_WorkshopMenu,952DB8CC4925CF24ED04EAA14CFF38E2,변경 사항 취소
+WBP_WorkshopMenu,9A8D306A47A0DFB2D5AFAEB0DA977D45,사본 만들기
+WBP_WorkshopMenu,A92C10454376433EE13248B63AAB6B67,퍼즐을 편집하기 위해서는 사본을 만들거나 게시를 취소해야 합니다.
+WBP_WorkshopMenu,BB1D9AA0430C0B642D3EB193FCCF2092,정보 수정하기
+WBP_WorkshopMenu,13F4B6D541D1665B917FB4BE7533E558,퍼즐 편집
+WBP_WorkshopMenu,29F01F2C42A1EC05997D5FB106A26BA5,나의 퍼즐
+WBP_WorkshopMenu,C6149E004DECED5C1BB6B2A8C7FBAAC0,시작
+WBP_WorkshopMenu,36601CB1488C2199A0F592976B8C9A15,게시
+WBP_WorkshopMenu,B503D7B44D366FFCEC822C8D621D2658,게시 중...
+WBP_WorkshopMenu,D31CAA604F69875F9483DE8185F3AD05,정말 게시하시겠습니까?
+WBP_WorkshopMenu,77C3AED34876510A3F5596AE4C2CA6DA,정말로 게시를 취소하시겠습니까?
+WBP_WorkshopMenu,A434BD49497E6BB50F4338B198A4895D,Steam 워크숍에서 퍼즐을 제거합니다.
+WBP_WorkshopMenu,A0FE92F2498F98F4D377A8B93DC627CF,검토
+WBP_WorkshopMenu,419AB2674A10985A27B585A7D9B84D28,저장
+WBP_WorkshopMenu,985D2DD74250903A0F5D2295B55133C8,직접 제작한 퍼즐을 커뮤니티와 공유합니다.
+WBP_WorkshopMenu,0469A4E14E901A5B6AB6FFA0DE31D328,퍼즐을 게시하기 전에 직접 풀어야 합니다!
+WBP_WorkshopMenu,40E29A4544ABD0585E72F9BA19449D63,제목
+WBP_WorkshopMenu,7593B2434C618979A2415F98FC60EFA4,게시 취소
+WBP_WorkshopMenu,FF7549B246EE2467138FD68C24D0D6FD,게시 취소
+WBP_WorkshopMenu,3ECE59E946D75F2F0A1BDA994DE145CA,게시 취소 중...
+WBP_WorkshopMenu,FE4CCEEC4F72600E242BCC9D9C0FE025,Steam에서 보기
+WBP_WorkshopMenu,B1765D5F4CE531847A36D0BFFE8D2618,작성자: {Player Name}
+WorkshopManager,DuplicatePuzzleSuffix,(복사본)
+WorkshopManager,NewPuzzleTitle,이름 없는 퍼즐

@@ -1,0 +1,33 @@
+{
+  "name": "glimmith-narrator",
+  "version": "0.1.0",
+  "description": "Watches Glimmith save files and plays Elias's narration lines when the matching puzzle is solved.",
+  "main": "src/main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "dist:win": "electron-builder --win --x64"
+  },
+  "build": {
+    "appId": "com.glimmith.narrator",
+    "productName": "Glimmith Narrator",
+    "files": [
+      "src/**/*",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "../voices",
+        "to": "voices"
+      }
+    ],
+    "win": {
+      "target": "portable",
+      "signAndEditExecutable": false
+    }
+  },
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  }
+}

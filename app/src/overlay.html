@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<style>
+  @font-face {
+    font-family: 'NotoSerifKR';
+    src: url('fonts/NotoSerifKR-Regular.ttf') format('truetype');
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'YsabeauInfant';
+    src: url('fonts/YsabeauInfant-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    overflow: hidden;
+    -webkit-app-region: no-drag;
+  }
+
+  #frame {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+  }
+
+  #frame.visible {
+    opacity: 1;
+  }
+
+  /* Content box, centered with margin around it in the (larger) window so
+     the drop-shadow below has room to fade out instead of being clipped at
+     the window edge. Actual width/height are set in overlay.js, scaled to
+     match the window's own scale (see BASE_* constants in main.js). */
+  #content {
+    position: relative;
+  }
+
+  #frameSvg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    /* filter is set in overlay.js, scaled to match the content size */
+  }
+
+  #textLayer {
+    position: absolute;
+    inset: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 46px 130px;
+  }
+
+  #text {
+    margin: 0;
+    color: #2b2116;
+    font-family: 'YsabeauInfant', serif;
+    font-style: italic;
+    font-size: 34px;
+    line-height: 1.45;
+    text-align: center;
+  }
+
+  #text.lang-ko {
+    font-family: 'NotoSerifKR', serif;
+    font-style: normal;
+  }
+</style>
+</head>
+<body>
+  <div id="frame">
+    <div id="content">
+      <svg id="frameSvg" viewBox="0 0 1280 280" preserveAspectRatio="none">
+        <path
+          d="M 144.5 17.8 C 183.1 5.6, 344.1 16.6, 393.7 16.9 C 443.3 17.1, 591.1 19.9, 640.2 20.4 C 689.3 20.9, 835.4 22.0, 884.5 22.1 C 933.7 22.2, 1092.9 9.7, 1131.6 21.2 C 1170.3 32.7, 1271.4 113.5, 1271.7 137.5 C 1271.9 161.6, 1172.6 250.2, 1133.9 261.9 C 1095.3 273.6, 934.3 254.5, 884.9 254.7 C 835.6 254.8, 689.9 263.2, 640.8 263.4 C 591.6 263.6, 442.5 257.8, 393.3 256.8 C 344.0 255.7, 187.0 264.4, 148.5 252.6 C 109.9 240.8, 8.4 162.2, 8.0 138.7 C 7.6 115.3, 106.0 30.0, 144.5 17.8 Z"
+          fill="#f3ecdd"
+          stroke="#221b14"
+          stroke-width="7"
+          stroke-linejoin="round"
+          stroke-linecap="round"
+        />
+      </svg>
+      <div id="textLayer">
+        <p id="text"></p>
+      </div>
+    </div>
+  </div>
+  <audio id="audio"></audio>
+  <script src="overlay.js"></script>
+</body>
+</html>

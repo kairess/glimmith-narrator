@@ -1,0 +1,19 @@
+# dependencies / build output
+node_modules/
+app/dist/
+
+# game save data (personal, and not needed to run/build the app)
+*.sav
+saves/checkpoints/
+saves/live-backups/
+saves/test/
+
+# unused multi-language font library (only the two fonts actually used by
+# the app are kept, under app/src/fonts/)
+/fonts/
+
+# misc
+__pycache__/
+*.pyc
+.claude/
+.DS_Store

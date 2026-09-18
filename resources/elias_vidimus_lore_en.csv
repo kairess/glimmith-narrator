@@ -1,0 +1,462 @@
+namespace,key,text
+,28E00C854FECE6D5CE4A9787874B10FA,+{0}
+,5928234C41C3170F5D509AB3D5656EA9,"<b>Esteemed Artisan,</>
+
+    I apologize for the preponderance of constraints I've laid upon your work. Many further rules are yet to come."
+,123A22F54A5AFE0A9DFA108E44CF16C1,"<b>Great Artisan of Glimmith,</>
+
+    The isle ahead houses the most difficult restorations of any. They are yours, should you wish to attempt them."
+,0095BE8C47D48169B07AF4B39D432620,"<b>Great Artisan of Glimmith,</>
+
+    Your skill shines through every pane of glass you've touched."
+,84244F29484CC92310C9C2B83EABD75D,"<input axis=""Zoom"" scale=""0.1f""/> and <input axis=""Zoom"" scale=""-0.1f""/> to zoom."
+,D6A87DC04690A6F675C7719C0C19D977,"Cells containing <input action=""PalisadeU""/> must always be dead ends. Cells containing <input action=""Palisade=""/> must always have two borders on opposite sides."
+,3AC82B3D4E6217D5E47C71B5228EBBE6,Click and drag<br>to explore.
+,7F1A9E8642D6D2AC5545F0886BA1A3B4,Controls
+,C03AC1064793C975CBD5D482E78C7DB2,"Frame Rate is currently set to Unlimited with V-Sync disabled. This is not recommended, as the game will consume all available resources to generate as many frames as possible.
+
+
+"
+,2F2F2D1C421E5169EA774080EEE7B4AA,"Frame Rate is currently set to {currentFPS} with V-Sync disabled, but your monitor's refresh rate is only {refreshRate}. The game will consume additional resources to generate frames that cannot be displayed.
+
+
+"
+,C91510DD4B47D2467E9B839D4C00A4BC,"Hold <input action=""AreaCounter""/> to see the size of an area."
+,7651B1FB4F86240E17DADB94EA45D6C2,"Hold <input action=""ControllerPrimaryClick""/> or <input action=""ControllerPrimaryClick"" mapping=""1""/> and drag to merge regions."
+,AF5CCC024B67045021942180C4D85EF0,"Hold <input action=""SecondaryClick""/> or <input action=""SecondaryClick"" mapping=""1""/> and drag to erase."
+,4ED871114F4FE6AD6D242B98F3949E50,Join our Discord
+,C0C86A4F4F2271F5AC5A4E93BF4FF81A,Loopy grids can be shaded with 2 colors in alternating layers from the outside.
+,F0B188AC47B63E5C4AC77F81D5E4EBBE,"Near the perimeter, cells must often be merged to prevent borders from forming a T-shape."
+,C010CDF34FFA7F9A7593F88CC2E1473D,Perfected Windows
+,E96437774226F265C56FC181F55BEF0C,"Press <input action=""OutlineRegion""/> to place metal borders around an entire shape. You can use this to mark regions that you are absolutely sure of."
+,5386D6B240B03CA6479FD8B3C97C0AFA,"Switch colors quickly with <input action=""SelectPreviousColor""/> and <input action=""SelectNextColor""/>."
+,89C0A52A408A0459A16FE58905DBD31A,The borders of a completed Loopy puzzle always look like a collection of loops.
+,F20BA83845509F17EB945B980D25EECE,There are other places where cells must be merged to avoid making T-shapes with borders.
+,45508C1A4F6B9D193BC67C805270B8DB,"Use <input action=""CycleInputModes""/> to switch to coloring, border-drawing, and note-taking modes."
+,A613B17D4930BC94BC9410973376DFAB,"Use <input action=""Undo""/> to undo, <input action=""Redo""/> to redo, and <input action=""Restart""/> to restart."
+,2E22CF1D47B4DCFE77FE2789292D8883,"Use <input axis=""Up"" scale=""-1.0f""/> to explore."
+,86F8DCB04B5A4C7EAFD04AB629817813,"Using <input action=""OutlineRegion""/> to outline completed regions can help reveal contradictions."
+,5652A46F4B2A2C43A739DCA77D753137,"Whenever adding a border between two cells would make a + shape, you can join those two cells immediately!"
+,BA26AE6449AAD02F6A7C8A910C7A72BD,"You can press <input action=""FloodPaint""/> to flood an entire region with color."
+Overworld_Campaign.BP_StainedGlassPlinth20,F260F0154AF4242DF567209524CA6F95,Shape Bank
+Overworld_Campaign.BP_StainedGlassPlinth21,D79239C844857F9A8D24FBB1CB840B6E,Polyomino
+Overworld_Campaign.BP_StainedGlassPlinth22,A25A7AC34235ECB32190268912BC74E1,Precision
+Overworld_Campaign.BP_StainedGlassPlinth23,1A568BA94C0FC64435DD5FA80CEBB913,Mingle Shape
+Overworld_Campaign.BP_StainedGlassPlinth24,BD6729454E2BB70A3CF50D81E04A5C21,Forest Trailhead
+Overworld_Campaign.BP_StainedGlassPlinth26,CD5605F34F58F683DC57AA97862B2DA3,Bricky
+Overworld_Campaign.BP_StainedGlassPlinth27,6C02689C47C66B23D15CD9A5CB27A61B,Inequality
+Overworld_Campaign.BP_StainedGlassPlinth28,A6CA49934291E8EB677E68903608DED0,Loopy
+Overworld_Campaign.BP_StainedGlassPlinth29,8A3046194C8C5C8D0C08B48A628F3720,Watchtower
+Overworld_Campaign.BP_StainedGlassPlinth30,335E225F4CC2BD801B0A149F290D36D5,Difference
+Overworld_Campaign.BP_StainedGlassPlinth31,24CB3FC94F8B13948E3106BED79120D4,Hedge Maze
+Overworld_Campaign.BP_StainedGlassPlinth32,E994E7FC467D028784671DA18F3352F6,Compass
+Overworld_Campaign.BP_StainedGlassPlinth34,E08673434800D5C5F7B753A8E99B22C5,Secluded Garden
+Overworld_Campaign.BP_StainedGlassPlinth35,9A4A40344505D197AEF279A8EA3875B1,Spiral Island
+Overworld_Campaign.BP_StainedGlassPlinth_1SPR,F8106164469DA6134B61FDB5AE63B840,Solitude
+Overworld_Campaign.BP_StainedGlassPlinth_AllDiff,571E0FE04BE85933AFF4D7BC1859DC11,Mismatch
+Overworld_Campaign.BP_StainedGlassPlinth_AllSame,9DD5EE9545AD9C35CC9B65AF76B14CAC,Match
+Overworld_Campaign.BP_StainedGlassPlinth_AreaNumber,09DA53E44BAE24712B1F0B8B5DCE1E20,Area Number
+Overworld_Campaign.BP_StainedGlassPlinth_Bridge,69D51BC4414A1E3F507BF08D650905DB,Glimmith Bridge
+Overworld_Campaign.BP_StainedGlassPlinth_Gate,4E4D7A1C4FECBC71A8B3EF8820C5D3E5,Glimmith Overlook
+Overworld_Campaign.BP_StainedGlassPlinth_GeminiDelta,075A9FF7469B13EFBEB41B98BB56845C,Gemini & Delta
+Overworld_Campaign.BP_StainedGlassPlinth_MinMax,7D09C8B04C8EE29B66009489C44B3176,Range
+Overworld_Campaign.BP_StainedGlassPlinth_NoRectangles,99FCEB314BCF0930E6B97BB73BF9F7B2,Non-Boxy
+Overworld_Campaign.BP_StainedGlassPlinth_OnlyRectangles,E907EC9942C5F746002DF1B084040E2C,Boxy
+Overworld_Campaign.BP_StainedGlassPlinth_Palisade,D0217FDF43003956E64F118635B4F913,Palisade
+Overworld_Campaign.BP_StainedGlassPlinth_SameSizeCantTouch,A44918714541923C78DE0AA4343F5379,Size Separation
+Overworld_Campaign.BP_StainedGlassPlinth_SlashPack,2A0F01724506385798F3F5A6CB19C556,Rose Windows
+Overworld_Campaign.BP_StainedGlassPlinth_Zone2Mixed,F2B50AFF474DB97C0586F598A4B373F5,Castle Gates
+Overworld_Campaign.Inequality_Tutorial_03,75C750A040B96778CE8B62B149BE3B0A,You may find the note-taking tool especially useful within these puzzles.
+Overworld_Campaign.No3way_Tutorial_03,A7643CBB4BA22029E0A4B887BE3DBE9D,"Wherever borders make a T-shape, extend them to a cross with the edge-drawing tool."
+Overworld_Campaign.No4way_PuzzleCube40,EF4647BA435EB21E04AC61BA3CE6666E,Using shift-click to outline completed regions can help reveal contradictions.
+Overworld_Campaign.No4way_Tutorial_03,9D5A9206432C450EF22DD78ED07F531C,"This rule can also be stated as ""Borders must never make a + shape."""
+Overworld_Campaign.No4way_Tutorial_06,617A6F134C7DA963420F288FC83490BF,"Look out! If the corner of a region touches another corner, it will cause 4 borders to meet!"
+Overworld_Campaign.Palisade_Tutorial_05,995526214732CC526D9CC08FD6016164,"Remember: a single region can never touch both sides of a border. This means that ""dangling border ends"" are forbidden."
+Overworld_Campaign.Palisade_Tutorial_07,2EBC3E414D559D650EA826B0485E85D2,"In these puzzles, you may find it very helpful to use edge-drawing mode to mark borders you are absolutely sure of."
+Overworld_Campaign.PolyPuzzleCube23,4088F75E428F481175BD11B965DBC4D5,You don't need to place whole shapes at once. It can be useful to color an incomplete part of a shape.
+Overworld_Campaign.PuzzleCube51,82F6CED145BA5A27B1B4B09605CA87EE,"On larger puzzles, guessing can get you into big trouble! Only color shapes that you know for sure."
+Overworld_Campaign.PuzzleCube55,A14C42A349CB7515D8D18E868FBA0D4A,"The second law of puzzling: Whenever you find a pair of cells that *cannot* be connected, draw a border between them!"
+Overworld_Campaign.PuzzleCube63,CDBA400B4DE6A3A92566B189B41DBE91,"The first law of puzzling: Whenever you find a pair of cells that *must* be connected, join them together!"
+Overworld_Campaign.PuzzleCube_01,0AA137B1414B025275F5A2A55B0A7BFD,Click and drag to merge regions.
+Overworld_Campaign.PuzzleCube_01B,0735BF81412FDCBC8356F09C42FB2E72,Right-click and drag to erase.
+Overworld_Campaign.PuzzleCube_02,8B117F244A9D313FE0FC9BAD63C3771C,Shapes can be rotated.
+Overworld_Campaign.PuzzleCube_03,D23827B140C523EF4E8B1DA5E7A1DB63,"Use Z to undo, Y to redo, and R to restart."
+Overworld_Campaign.PuzzleCube_04,682284D842300328BCE83F8696ACA765,"Cells containing <input action=""Palisade^""/> must lie in a corner of a region and must be connected to two other cells."
+Overworld_Campaign.PuzzleCube_04,891D87B64D437E50686A6F8490C6C096,"You can choose colors freely, even after completing the panel."
+Overworld_Campaign.PuzzleCube_05,15A0315442A362217813CEAB9A61F0D7,Mirror reflections of shapes can also be used.
+Overworld_Campaign.PuzzleCube_06,539B064A435E36A6AB6DADA5F1157059,Drag from corners along dotted lines to place metal borders. Use them to mark edges you are absolutely sure of.
+Overworld_Campaign.PuzzleCube_07,C85FB19F401B81BF4AE8F9B30D37D37F,Switch colors quickly with keys 1 to 9 or the scroll wheel.
+Overworld_Campaign.PuzzleCube_08,78A8EE8F44CEE1E53191A2A3767955A4,"Use TAB to switch to coloring, border-drawing, and note-taking modes."
+Overworld_Campaign.PuzzleCube_09,FA00B4DB4698516E92590682C4EB31B9,You can complete the entire panel in border-drawing mode if you prefer.
+Overworld_Campaign.PuzzleCube_10,D558372D409A50E2712FD0AB38D14E52,Shift-click or middle click to place metal borders around an entire shape. You can use this to mark regions that you are absolutely sure of.
+Overworld_Campaign.PuzzleCube_10a,48D09BB9484C8879DBBA1AB2E4E46ABF,Puzzles can always be solved with logic. Guessing is never required.
+Overworld_Campaign.PuzzleCube_10b,D8E402FF469310F53D8D13AF9C15125E,Each puzzle has a single unique solution.
+Overworld_Campaign.PuzzleCube_10c,C42669994B5486F6F2A4DF86CC3110DA,"The first step here is not obvious. Instead of guessing, try joining cells that you know are connected."
+Overworld_Campaign.PuzzleCube_11,5D720BE944AC71AB95AEC29EF72EAB16,Borders must always separate two different regions.
+Overworld_Campaign.PuzzleCube_GD8,034874744F01BA62BC8674ABE44F8F64,It's helpful to use colors or notes to mark which shape occupies a cell.
+Overworld_Campaign.PuzzleCube_SlashPack_Tut3,B501CF82413D1EFB93F5D88757D95037,You can press Q to flood an entire region with color.
+Overworld_Campaign.PuzzleCube_SlashPack_Tut5,6184373C40C6D68A6DCCB1891DBB0E6F,Remember: A single region can never touch both sides of a border.
+Overworld_Campaign.SizeXPuzzleCube04,3C2F15E445C664A1F65FD28B8C6C1248,Hold Ctrl to see the size of an area.
+Overworld_Campaign.TutorialSign,270BE365419FF8F15D8950ADD1E00D91,Click and drag<br>to explore.
+Overworld_Campaign.TutorialSign2,F75E382A40E113DE1ABC1AAB85E96F92,Scroll to zoom.
+Overworld_Campaign.TutorialSign3,B9CD430B4F26EAD9A5EEFA83CEE10E79,Your progress is<br>saved automatically.
+Overworld_Campaign.TutorialSign4,8F02E599411BA94F760BE4B05E44C145,Drag the camera around<br>to find secret puzzles.
+Overworld_Campaign.TutorialSign4,004C9DCA4EA38363074130978DF372EF,The camera cannot<br>be rotated.
+PuzzleUIWidget,RangeRuleText,All regions have an area <b>between {0} and {1}</>
+PuzzleUIWidget,RangeRuleTitle,Range ({0}-{1})
+RuleData,1911BCDC41EF2462BE44ECB7318A2F48,<b>All regions</> must have the <b>same shape</>.
+RuleData,64F21CD245418C8F4B6D40B88114FDF8,<b>All</> regions are <b>rectangular</>.
+RuleData,DBD0802D46DADAF0783D1E80B6516431,<b>All</> regions must have <b>different shapes</>.
+RuleData,AE971780472AF81F857B1784C55E4639,<b>Counts</> how many regions are <b>touching</> the clue.
+RuleData,BE0E0B8E4F269FF74F22B2A4FF6873D8,<b>Each</> region contains <b>exactly one</> of each symbol.
+RuleData,F3877AAC470122500820ABAFD749F837,<b>Neighboring</> regions must have <b>different areas</>.
+RuleData,45A3382D43EA3BE7F9B741BED46CF668,<b>Neighboring</> regions must have <b>different shapes</>.
+RuleData,B6751BCC4120DDF933C0D8BC8C0F1FDF,<b>No</> regions are <b>rectangular</>.
+RuleData,7C7F8C00416A66238C1AB283C4589467,All regions have an area of <b>at least {0}</>.
+RuleData,4B2E78B44A93B126DCA4E088BDEA9040,All regions have an area of <b>at most {0}</>.
+RuleData,9C8A7A4F4E66A8FD958D348A9B88246C,All regions must be one of these shapes:
+RuleData,FF80FF02447335A02328768FC23CA722,All regions must have an <b>area of exactly {0}</>.
+RuleData,523BC0584F9F8356D46723A60547F422,Area Number
+RuleData,1D4A0CDB46719854AA758B88D281A914,Boxy
+RuleData,C13774A24722E39BA998028072ADC4BC,Bricky
+RuleData,272AEBC040104AF094A51F9F26CEE541,Compass
+RuleData,619835EC458BE28F406668A683117453,"Counts the cells within the region that are farther north, south, east, or west."
+RuleData,1B2CF8544CC3428A6176E797B5E9C34F,Delta
+RuleData,EA6CE0DB498EAD2593F4AD80996C0521,Depicts the <b>shape of its region</>.
+RuleData,ACF593A8499A8177AEE86FBED0770D2B,Difference
+RuleData,49E336F241E7F575A6F22E9357E7DA31,Each region contains <b>exactly one symbol</>.
+RuleData,77E86CA349F70CB83847E2A500846F7A,Elusive
+RuleData,A861EA9944067694EA7237B9A2CF51F2,Gemini
+RuleData,2B49C41746B8C172843075ABEDA2EDCC,Indicates the <b>difference</> between the <b>areas</> of the regions.
+RuleData,E6ABC63A4E6DF77AA272D0BA52A1E164,Inequality
+RuleData,807760024D1ACA9751FE9C958458647A,Loopy
+RuleData,7DB04A174E37F8AB8B0BD586577ED2D9,Match
+RuleData,5E74FBA445ABD59A6F8EC880584CA2DA,Maximum ({0})
+RuleData,2C00C6C045A847A8308DB689F85D0B8B,Mingle Shape
+RuleData,338B76144CF75DB26C41959D8D395C27,Minimum ({0})
+RuleData,C89AFB8A4D810DD066FF9485E811572C,Mismatch
+RuleData,7D6B921047117CDB59EDF09B6024050C,Non-Boxy
+RuleData,20575CC1478DE6DF1EB3698460EE5C66,Palisade
+RuleData,6E60598C4097F6E37901B1993058844E,Polyomino
+RuleData,A24B653A416980122B4470B1BDB8D31F,Precision ({0})
+RuleData,B87ED0164F4A79CEC63D78886FFD3366,Rose Windows
+RuleData,6FFBB24F40ADF0E9B0291EB36285115E,Shape Bank
+RuleData,100C791C472A565AB823D89EA75A478C,Shows the <b>area</> of a region.
+RuleData,C2FB6A1B417EAFA7E74754B9AA5DC78E,Shows the <b>shape</> that must be made by the <b>borders</> of that cell. All rotations can be used.
+RuleData,E4858B23465E54C128E984A839666954,Size Separation
+RuleData,DEC087054039B1DCBC1AD59122C666AD,Solitude
+RuleData,CACEE64747557870DC157D8B7CCA2D3A,The tip <b>points toward</> the <b>smaller region</>.
+RuleData,E86915E34E225153E58EFF96087A802A,The two regions touching this symbol must be <b>different shapes</>.
+RuleData,A8B4782D4FE454A7710CBB91610A4541,The two regions touching this symbol must be the <b>same shape</>.
+RuleData,C593A90145E30152F6446692E5137C03,There cannot be a point where 4 borders meet.
+RuleData,83E2C6754B8F5BB0740091A306DC8CCC,There cannot be a point where exactly 3 borders meet.
+RuleData,7EE292DA4DDF9DC794D811A0E52C124F,This shape must not fit inside any region.
+RuleData,79C2BE9847A01963B8361389BF6DA7C7,Watchtower
+ShapeBank,ShapeBankRuleTextPlural,All regions must be one of these shapes:
+ShapeBank,ShapeBankRuleTextSingular,All regions must be this shape:
+WBP_ControlsPanel,30882F81488F93A1AB12B78E82A13889, or 
+WBP_ControlsPanel,2D01F5644A94393B7CBF69864E62EB7D,Change input mode
+WBP_ControlsPanel,255D4A514DAEE5FCA0542F853042609C,Choose color
+WBP_ControlsPanel,9B3DF1744E605BCA92BA908AFB55DEEA,Color cells and merge regions
+WBP_ControlsPanel,EEF2FF5E40963CF271109EB4D354D412,Controls
+WBP_ControlsPanel,2FE1518D447033A9B1466DA5D16EC788,Draw borders
+WBP_ControlsPanel,DCDDBE354BC3918F7CA3D7B15407966B,Erase color or borders
+WBP_ControlsPanel,CC5544C4426AFA39BD6B7BACA606EDCD,Erase notes
+WBP_ControlsPanel,38BF1D464DF4D77026CC1595562364CE,Hold to measure area
+WBP_ControlsPanel,20409B394811A25A70B6908EBF19225E,Next or previous color
+WBP_ControlsPanel,FB0FCDB543C6D1CBAC985C9FAC37A5B4,Outline shape with borders
+WBP_ControlsPanel,7C59F0D04A15277BE9D7598C5A642CA0,Paint bucket
+WBP_ControlsPanel,8F0729A24B684A747ED93E81BEC11158,Press 
+WBP_ControlsPanel,FD8644F3489D0C93210A5C8CC0F58706,Redo
+WBP_ControlsPanel,D5A09B8548C5BE481176709FAD66683A,Restart
+WBP_ControlsPanel,9AA43C6B4503CA80DDB7778716D055FE,Undo
+WBP_ControlsPanel,27D817B149FA33A93F984CB80F98CA99,Use Auto Palette
+WBP_ControlsPanel,232297B84C2F8338F40AF8BC409FC338,[Backspace]
+WBP_ControlsPanel,29F0D7404E5BE947C338F6AB080D704C,[Click and drag]
+WBP_ControlsPanel,8062905E4A14127358973FAD1E879934,[Ctrl]
+WBP_ControlsPanel,E860373F48114A6A8A617682218D7C6D,[Drag from corners]
+WBP_ControlsPanel,1475AAAE43757A1804391F877086F0F9,[Hold and drag]
+WBP_ControlsPanel,5CE7B01348CDC18F0C45FBA571A9ACF3,[Right-Click]
+WBP_ControlsPanel,26AE961D49BDFBE8C48A149BDB61369C,[Scroll Wheel]
+WBP_ControlsPanel,345574EE4593CA5E9DE472A90180D0AE,[Shift + Click] / [Middle-Click]
+WBP_ControlsPanel,DBE0E0ED4F345E60F8E1AB92151C2624,[Shift + Z]
+WBP_ControlsPanel,DDFF370E4D7D894F8C22CC99337941D2,[Tab]
+WBP_Credits,22A0F6CA4F285FF61C5F2682F2790628,983 Team
+WBP_Credits,D96239CE4DEB450688E486BCED80358A,Artists
+WBP_Credits,5CC8788448CCBB2AF6EB8A83812DA61D,CREDITS
+WBP_Credits,0E51FF4D4ECE9F780B049F9FEACAE0CB,Directors
+WBP_Credits,DF9FD5E84127686B5CB2B4BDDAD37881,Localization Team
+WBP_Credits,872B7BE34946AC0F1E6218B259825C5E,Programmers
+WBP_Credits,F066D88C4B8D1FD6D6DC40BE50FA8961,Puzzle Designers
+WBP_Credits,FFBB9A1D49D8E3C507A0208AF90C47B9,Puzzle Editor-in-Chief
+WBP_Credits,8CBCF9D0468667C8F53FD8B379DB21AA,Testers & Special Thanks
+WBP_Credits,5FC067D54DAAEBF16F8576959B795A0E,Trailer Voice Actor
+WBP_EscapeMenu,ED7C605041CDD40F5F214B948451A56D,Main Menu
+WBP_EscapeMenu,DA721EC74F7F35CB58CDB3BEB6305D74,Quit
+WBP_EscapeMenu,CB2B4A574174DEA9844BAF83A052CBA4,Resume
+WBP_EscapeMenu,4AC5C3FC4E2905ED6E3D7A8C3DEDA954,Settings
+WBP_MainMenu,7B594D2F4ACA37CA820681823C0040C7,Back
+WBP_MainMenu,EBF8D28C422A3307A8CABAA92A2F53E5,Back
+WBP_MainMenu,4A6D327B4C309047802E8BA75885ADD8,Cancel
+WBP_MainMenu,F0AF858F4C17E24096CF7DA7D6B2161F,Cancel
+WBP_MainMenu,03DA79A04A434DED7FB559A2B6D1AB94,Confirm
+WBP_MainMenu,471A147E4C3EB7156222899A461E6580,Credits
+WBP_MainMenu,8A7F3E934BF7DD2ED7E5C1A20BC9D2CA,Delete Save {Num}?
+WBP_MainMenu,2E3831B24899A8F29A5689B8B15E62B0,Erase Save
+WBP_MainMenu,56D3A9EC472DAEF6CCEB9298CCF3CB40,Load Backup
+WBP_MainMenu,3BCF2E574A89E5A9840E21B713A059F7,Loading
+WBP_MainMenu,5E8D8BAC435CA9E8C5690A9844379535,New
+WBP_MainMenu,289B01C04B320134238E41BDAE813250,OK
+WBP_MainMenu,C8A8C75B4852E26BF7C3669A8BB765D1,Play
+WBP_MainMenu,08A362C04835108137453E89049F5FA3,Quit
+WBP_MainMenu,57544E89483E270495B8D7B3521039DB,Quit
+WBP_MainMenu,1E4F697042C5ECCE147385844FF3C2AC,Settings
+WBP_MainMenu,236BDEEC47DDF94EAE8D498ACF863673,Settings
+WBP_MainMenu,3A4EF3D046529EE660FB72B87578B349,Slot 1
+WBP_MainMenu,7E1A308A4D43C2AB39450DB48049ABF9,Slot 1
+WBP_MainMenu,75E7FF964C86E31909DC27BC9510D224,Slot 2
+WBP_MainMenu,C293A8DE435E6947A4F432BF512DCF56,Slot 2
+WBP_MainMenu,27F2A58F4AEFC650B96DB3946C17757D,Slot 3
+WBP_MainMenu,C87986AF47422965D6639998F8600FFC,Slot 3
+WBP_MainMenu,532F0F484001B7BEBD055E9714A7AD58,"Unable to load save files. Restart the game and try again. If the issue persists, contact support or restore a backup from:
+C:\Users\[username]\AppData \Local\Geri\Saved\SaveGames
+
+"
+WBP_MainMenu,696756FF4339943AA279C7B64258A51E,Warning!
+WBP_MainMenu,A00F2A9C41F2EC53A5CB3387C4B377A6,Workshop
+WBP_MainMenu,01D530C748692F25862CBDA950AE6498,{numSolved} solved
+WBP_MainMenu,E6E4FA2C4E71261229B85B9402F555AB,{numSolved} solved
+WBP_MainMenu,FE2AE5A644BFD7892744899A49F45C28,{numSolved} solved
+WBP_Note_CompletionStats,346ACBB348ACE7A46274E8B3ADB43AA6,"<b>Well done, Artisan.</>"
+WBP_Note_CompletionStats,1680D4DF485093E46AB091B8019441F3,"<red>Across all of Glimmith, your restoration progress is:</>"
+WBP_Note_CompletionStats,2216BDDA46142E582F8CD8A55F3BA6DA,{0} ({1}%)
+WBP_Note_CompletionStats,98A0ADCE47480EA218A6649DADAF08C7,{0} ({1}%)
+WBP_Note_CompletionStats,E01B203541667B8F37DD32AE44A72193,{0} ({1}%)
+WBP_Note_CSides,24B0A04140266D2296FEB9A6505E2E2B,"<red>Furthermore, I have delivered a collection of weighty designs across these lands and laid them atop crimson plinths.</>"
+WBP_Note_CSides,7B58A49B4B67F63EE0B9D8B5E68F48D6,Fig. 1
+WBP_Note_CSides,BA3E0CD84179486EF06D69978E661DE3,"Should you rise to their challenge, you will have Glimmith's unwavering regard."
+WBP_Note_CSides,0F04CC3E46F7666E7A8BD8806A6B6663,"With gratitude,
+~ Elias Vidimus"
+WBP_Note_FinalChallenge,40CA659F4E0A559E3FDAC28169F9D590,"<red>Once you have fully completed ten areas, the way forward shall open.</>"
+WBP_Note_FinalChallenge,DC80BF854A37D41B42597BA23924CEBF,Fig. 1
+WBP_Note_FinalChallenge,5A01208B47AF81CB439088AFDE1FFD79,The windows are newly imbued with an enchantment that will reveal any artworks I've hidden too well.
+WBP_Note_FinalChallenge,10CE59F043DF3140E358E8A99DA1A908,"With shining regard,
+~ Elias Vidimus"
+WBP_Note_Metallicize,C7560F814D7E9078F7136CB85E8BEE23,"<b>Respected Artisan,</>
+
+    The areas ahead contain a vast collection of glasswork designs. But fear not! You need only complete a fraction of them to restore the windows. "
+WBP_Note_Metallicize,FF80998344E3CFD0C8C1B2BA2BD99F25,"<red>If ambition beckons, complete more glassworks to metallicize the frames and reveal extra challenges.</>"
+WBP_Note_Metallicize,41FAA92C4EDAC4551973F7AC06907AB7,"If you thoroughly master an area, its frame will become gilded."
+WBP_Note_Metallicize,82EF7C7F49360C03684A5780B9BE9D18,"Yours truly,
+~ Elias Vidimus"
+WBP_Note_OptionalArea,4F6F77BA4E7B7BCA2FCFE6A7C92A3A8D,"<red>This area is optional.</>
+<red>You may proceed as soon as FOUR windows are complete.</>"
+WBP_Note_OptionalArea,6EDBBA274C8CD1C4928B2EB9CB17CA36,Fig. 1
+WBP_Note_OptionalArea,61E3EEDD4B16C5926109E3B2EAA19B4D,I commend your diligence and persistence.
+WBP_Note_OptionalArea,406BB67146FC2EC77E921BBC2CB29074,"Yours truly,
+~ Elias Vidimus"
+WBP_Note_Welcome,CC4EA3BE4EE92F67B0D9D7A62F460E03,"<b>Dearest Esteemed Artisan,</>
+
+    Thank you for accepting my invitation to restore the artworks of Glimmith.
+
+On that point, I have only one request."
+WBP_Note_Welcome,219FF161475740E3D1D4958436C22888,"<red>When shaping each piece of glass, you must follow the rules very closely!</>"
+WBP_Note_Welcome,13870D434BCA3A32760043A40D7BAF14,Fig. 1
+WBP_Note_Welcome,ECDD5B9644A88FD0DCC55FB02241A9A5,I care only about the shapes. Let your creativity run free with the colors!
+WBP_Note_Welcome,C22D257B445DAD49E0BF5297956C8B64,"Yours truly,
+~ Elias Vidimus"
+WBP_Note_Windows,9EC1F6014A8CF8B5D2D3118F148F736F,"<b>Dearest Artisan,</>
+
+    I hope this letter finds you in the best of spirits and creative fervor!
+
+There is much work to be done..."
+WBP_Note_Windows,B44FA5194BD8BB86C842D3A1EAD68732,<red>These window frames show your restoration progress.</>
+WBP_Note_Windows,C7BB1CBF4D9DF6802BE4F7B4252F8EA3,Each glasswork you restore contributes to a window. Complete windows to progress onward.
+WBP_Note_Windows,06D5E8A24D55CC1EC6967FAB41EB4378,Fig. 1
+WBP_Note_Windows,686A6D54407BDFB1CF4077885620FBC6,Fig. 1
+WBP_Note_Windows,37BAA34E44670B3402C181B6719732D8,"Yours truly,
+~ Elias Vidimus"
+WBP_PuzzleCounter,8DEEDD3343BD401A5A9B78BEEAFD242C,"<input action=""TogglePuzzleHighlights""/>: Hide hidden puzzles"
+WBP_PuzzleCounter,90715CA84754A6D3A9AF70A4E742070E,"<input action=""TogglePuzzleHighlights""/>: Show hidden puzzles"
+WBP_PuzzleCounter,F18C935E48E77AE07F95B4A417AEE955,"Restoration
+Progress"
+WBP_PuzzleListEntry,A03F22EF429702A706D3AC9F5057E1F1,Find more puzzles
+WBP_PuzzleListEntry,4D8AB1F743998EFC4FA1B0832E391473,New puzzle
+WBP_PuzzleUI,F485BF304EF45F30962CF7BD5C46186B,"<h1>Challenge Ahead!</>
+
+Difficulty 5-6 puzzles are <b>very challenging</>.
+
+They may require careful logic, advanced techniques, and lots of persistence.
+
+Early ""break-in"" steps may be difficult to spot.
+
+These puzzles are <b>optional</>. Feel free to come back later if you get stuck."
+WBP_PuzzleUI,4242A0DD4D300723950E188AEB4030D7,"<h1>Extra puzzles</>
+
+Some areas have more puzzles than necessary to gild the window.
+
+You do not need to find them all.
+
+Later, you will discover the true number of puzzles and a way to locate every last one."
+WBP_PuzzleUI,9F751D9D40611892B572519F4490E45C,"<h1>Extreme Challenge Ahead!</>
+
+Difficulty 7 is the highest in the game. These puzzles are <b>diabolically tough</>.
+
+We recommend saving them until you've completed most of the game.
+
+As you gain experience, you'll learn subtle tricks to help overcome them."
+WBP_PuzzleUI,FA75B8364875F8883F7128B1F25CAEE1,"<h1>Note what you know</>
+
+The key to success in trickier puzzles is <b>marking down partial progress</>!
+
+Merge cells when you know they belong to the same region. Draw borders when you know they exist.
+
+Do this immediately, even if you don't know the full shape of a region.
+
+Filling in the facts will reveal new ways to make further progress, until the puzzle is complete."
+WBP_PuzzleUI,85AB8C7E4A530263DAF38ABF478DC5EC,"<h1>Secret puzzles</>
+
+Some puzzles are tucked away in hidden locations.
+
+They are totally optional.
+
+Later, you will discover a way to find puzzles that you missed."
+WBP_PuzzleUI,73257C604F8679098F71028455D67A21,Add rule:
+WBP_PuzzleUI,F8B9260C4C0FAF363F8A0383908DF8C9,Adjust grid size?
+WBP_PuzzleUI,C74A40584176B202A278CBB44DAABCB0,Area Number
+WBP_PuzzleUI,927ACC454F7CD8294AD842875793F8CA,Borders
+WBP_PuzzleUI,B3DB871648734B01244D7D9F484F8AE2,"Changing the grid size will clear the grid and discard all changes.
+This cannot be undone."
+WBP_PuzzleUI,7A4F0828437AAFB8A9ED28AFC27F4CA1,Check Progress
+WBP_PuzzleUI,1D279FE94CC18DB5A63523AAEB538110,Clear Notes
+WBP_PuzzleUI,D0ED071943D54B46E9B9FF9B7E684310,Coloring
+WBP_PuzzleUI,DE041E0E4CAE62469A538CB98F26A833,Coloring and Borders
+WBP_PuzzleUI,5BF6409B401BB246CB42DFB29B1BC2B9,Compass
+WBP_PuzzleUI,8E5747034BEE0AB16950108AE79A1E70,Confirm
+WBP_PuzzleUI,E91704F44611D5B0111150AEAB483BFF,Continue
+WBP_PuzzleUI,75AA0CCB4938351FF22947B0D832B42F,Current Shape
+WBP_PuzzleUI,4E8B01F14BFDA92E44A6319F132F88CB,Delta
+WBP_PuzzleUI,E62B3DDC45EAB857AFA01E93D081CFF9,Difference
+WBP_PuzzleUI,08C268BA4DDA51565D11698D14F5E8D8,Difficulty
+WBP_PuzzleUI,A368961A4E819AA86D78EF93006B38E1,Domino
+WBP_PuzzleUI,94C78FE24C5D639CA23BE09EF3552A16,Draw
+WBP_PuzzleUI,2D51D6C34F0475444C03EA85F687AC07,Edit puzzle
+WBP_PuzzleUI,4332984942AED70DF95F63A9E035A85A,Erase
+WBP_PuzzleUI,2BD1B672416E6336B20F05A291427D0F,"Everything entered is correct, but some regions must be merged."
+WBP_PuzzleUI,A3A583314885EBBE128D6E9E59813DBA,Everything entered so far is correct!
+WBP_PuzzleUI,5E4E5C614D209EBBD618979F529EF018,Everything is correct!
+WBP_PuzzleUI,ECE7DD4845F1E052F441358210E5D9F0,Exit
+WBP_PuzzleUI,BCB179C040F70A5BEB821FA99C1283F7,Gemini
+WBP_PuzzleUI,FD7B8E0F468EBE3ED69DB7B5E2CF361A,Given borders
+WBP_PuzzleUI,65A38B00448995D2159D90A7F26BAB66,Got it!
+WBP_PuzzleUI,1CC4BA8E4E86B9CE8A482A9FC0585BC0,I-Tromino
+WBP_PuzzleUI,E159FE9F43E124960365ECBF009DB4D1,Inequality
+WBP_PuzzleUI,B057DCCA4D17ED786915D183FCFEC16D,L-Tromino
+WBP_PuzzleUI,5912E37D4922F8D0B5DC0B90C5CB39CC,Load solution
+WBP_PuzzleUI,4B32B230472BFA9E01EBC6818A5F0FC1,Notes
+WBP_PuzzleUI,4F22AD5E41C6B08E858A0CAC79D10F10,Palisade
+WBP_PuzzleUI,7152BEC54B44A7BB15890181222232B5,Pentomino
+WBP_PuzzleUI,1002DE0E41938B27324D33A1D17A0096,Polyomino
+WBP_PuzzleUI,E119C3CA4934178F413410A5CD90464A,Remove clue
+WBP_PuzzleUI,A4B0D089401B264A40E0368CF53DED49,Restart
+WBP_PuzzleUI,74892A644E3B237D6ABB94B362DAB002,Reveal
+WBP_PuzzleUI,8819D41D44BBC3FF56E31D9441EFA64B,Rose Window
+WBP_PuzzleUI,F937A9614825E2662EC7938935970F3C,Solve puzzle
+WBP_PuzzleUI,BFEF2BB745EF65A315E048909F99C7D8,Tetromino
+WBP_PuzzleUI,7163DAE049AD3353D2CCA48895AA056D,There are several mistakes. This is the earliest one.
+WBP_PuzzleUI,1875A0DC443CF4ABD4569BA99B3739C9,There is at least one mistake.
+WBP_PuzzleUI,D087E93C4C7587BBFDEC6DBBA0AAEECB,These two cells should not be connected together.
+WBP_PuzzleUI,993779F4482599DD13AE3FB826F7F68A,These two cells should not have a border between them.
+WBP_PuzzleUI,3043AC934494B87687076DA61DB519A6,Toggle cell
+WBP_PuzzleUI,A9C16C0E4374F443078899B3B9858123,Undo
+WBP_PuzzleUI,50B8968F41BDC49A2964FDAFB984E726,Watchtower
+WBP_PuzzleUI,1B06E61C447E4EA1E0474ABE6E93CE36,You haven't started solving the puzzle.
+WBP_PuzzleUI,C8B346F548877E79B9908EB05F3C955C,[-] (Hyphen)
+WBP_PuzzleUI,BED16CB5450981A400B5FA84AEC4F2E1,[.] (Period)
+WBP_PuzzleUI,49B587A2418F7D2E43A9A084840660D8,[Arrow Keys]
+WBP_PuzzleUI,D48DC41E4BC84F425B9822BF707FE908,[Click]
+WBP_PuzzleUI,D752BC5942BBBB1FBC3E7EB8E6AD82B7,[Delete]
+WBP_PuzzleUI,E9F69D4F403B0376B0218C8C7BC23F7B,[Drag from corners]
+WBP_PuzzleUI,20FC626546FDF051E4F0F5AC06B56B78,[Right-Click]
+WBP_PuzzleUI,11820C3B49FD280327F3FD911C7BAB1C,[Shift]
+WBP_PuzzleUI,A96D13B34C6A1D9E24A69DB0DD6B6772,[Shift]
+WBP_PuzzleUI,D44D4A1A48FABD64549C9CA85BB9759A,[Shift]
+WBP_PuzzleUI,48BDBD42441DB9DA2475CD8BAAF4B949,[_] (Underscore)
+WBP_PuzzleUI,3C875C024CB9C262F9253EAB1311D802,size
+WBP_PuzzleUICompletion,FA919356424D7A8C06B08EBC2B53CCB4,Continue
+WBP_PuzzleUICompletion,DDD6E14D4D700F42B7F5AE99BA04C499,Exit
+WBP_PuzzleUITutorial,9138D7CE41C4B51774DD6EA00B190A7E,Continue
+WBP_PuzzleUITutorial,35D75C2D4167AE22801B7BA36DD9097E,Exit
+WBP_PuzzleUITutorial,AD0BFB88486F61754647F89DD37AC5D0,Fig. 1
+WBP_Settings,A50DC59548D724F6E12D289EEE4FD2C1,Check Progress
+WBP_Settings,94BA8D0F44ACCB044C157EB3500A62EB,Disabled
+WBP_Settings,B5EB57E048167751BF15628991752588,Disabled
+WBP_Settings,F9B6E56A44D7AEECE3D72298F52C857B,Disabled
+WBP_Settings,8E0EEA2849F443E3A35B0899109167F9,Enabled
+WBP_Settings,B46D957C441DCEDDB907B5A6C37E7CB4,Enabled
+WBP_Settings,D365BA32489E222DD4BB3283A94BFC22,Enabled
+WBP_Settings,5A011995467905678C56C4888013A1E7,Epic
+WBP_Settings,3471D94D4DABB8931B21F7B787397EFC,Frame Rate
+WBP_Settings,180EB04D4697B74A660441B98177BE85,Fullscreen
+WBP_Settings,3AB6F3D24C020D80F6B2C7B74023F57E,Graphics
+WBP_Settings,05F9CECC420C220DA30E0CA70BDCF57E,Hide Button
+WBP_Settings,F02845BA433DA0776224D883942D7C4D,High
+WBP_Settings,4838F7904F79B05EB420D6A5C72A7F24,Language
+WBP_Settings,FF095FCC477284970257D4BBF3E0168A,Larger Text
+WBP_Settings,5E3016404610D5264CB7F2AE83955B0D,Low
+WBP_Settings,B309DD714F0600D44D6934BC3A47796B,Medium
+WBP_Settings,7D26C57A432030D1ACDD61A28A116153,Motion Blur
+WBP_Settings,E117DE5E4AE42057912A8A84EED1DA6D,Music
+WBP_Settings,23F8FBA342F650E48ADBC2959739C02A,Mute in Background
+WBP_Settings,6621C18F43AF5C70E6D29A8C48236518,Resolution
+WBP_Settings,4606E55347EE84614524A4BDD26161E9,Screen
+WBP_Settings,D40D12D848254FBE50215ABAA24B3AF4,Show Button
+WBP_Settings,3A38AF254A62DC48EC9DCD9F3C9F720B,Show Errors
+WBP_Settings,1FBBF3A847BD6715191D579A6E2C4CC6,Side Panel Only
+WBP_Settings,9A321C6B4B9A331A8B6006867AB6EE38,Sound
+WBP_Settings,D3547AD246256DDC45B133A0ED6AF508,Unlimited
+WBP_Settings,31607A51427280F6454D2F91BD297E80,V-Sync
+WBP_Settings,EAF51B39436093449E135AA822D10BE7,Windowed
+WBP_Settings,2055EA2F416EC5BE4DD3A0BB5FC6A78C,Windowed Fullscreen
+WBP_SettingsMenu,F88A782A4F6F0BCB41A94F84CD25BE97,Accept
+WBP_SettingsMenu,7DF8C27E4A90E3F1946B63A828491FF8,Apply
+WBP_SettingsMenu,D03077264E989332BFAC6B8920EE055E,Apply Resolution Settings
+WBP_SettingsMenu,78D236FD4787991CD4449183F130ED6A,Back
+WBP_SettingsMenu,08D2775B46B52BB64F701C8EE17EB52B,Cancel
+WBP_SettingsMenu,61FD9BF54D2BEC524A859BBDFB8F86D4,Settings
+WBP_WindowCompletionTooltip,F774A53349470C4B996451AAD52D140F,{Area Name} ({Solved}/{Total})
+WBP_WorkshopMenu,0BD41C0240CB26112007299FEDDCC47A,"By publishing this puzzle, you agree to the Steam Workshop terms of service."
+WBP_WorkshopMenu,C08DE5164DBD7DCD2A72FBAB130ACF4F,Can't publish yet
+WBP_WorkshopMenu,35C88AFC455CC434730D6BAA303162C1,Cancel
+WBP_WorkshopMenu,592CE26E48FEE9D969D307968D54658F,Cancel
+WBP_WorkshopMenu,67919381429BBB6C7B940DB9E6846184,Cancel
+WBP_WorkshopMenu,BB0E21344F93A807CDD76A9913F65A14,Cancel
+WBP_WorkshopMenu,2395E7154DA2C90DFD4039A5FC833688,Community Puzzles
+WBP_WorkshopMenu,308BD720493E115F77DAB48CC253429D,Confirm deletion?
+WBP_WorkshopMenu,977E41FB42EEDA175F32139A05D42920,Delete
+WBP_WorkshopMenu,B783364B4C7A52F694E71C9CD25C06BF,Delete
+WBP_WorkshopMenu,C1E9270E4BB734AF11572990E31A9BE3,Description
+WBP_WorkshopMenu,952DB8CC4925CF24ED04EAA14CFF38E2,Discard
+WBP_WorkshopMenu,9A8D306A47A0DFB2D5AFAEB0DA977D45,Duplicate
+WBP_WorkshopMenu,A92C10454376433EE13248B63AAB6B67,Duplicate or Unpublish puzzle to enable editing
+WBP_WorkshopMenu,BB1D9AA0430C0B642D3EB193FCCF2092,Edit info
+WBP_WorkshopMenu,13F4B6D541D1665B917FB4BE7533E558,Edit puzzle
+WBP_WorkshopMenu,29F01F2C42A1EC05997D5FB106A26BA5,My Puzzles
+WBP_WorkshopMenu,C6149E004DECED5C1BB6B2A8C7FBAAC0,Play
+WBP_WorkshopMenu,36601CB1488C2199A0F592976B8C9A15,Publish
+WBP_WorkshopMenu,B503D7B44D366FFCEC822C8D621D2658,Publishing...
+WBP_WorkshopMenu,D31CAA604F69875F9483DE8185F3AD05,Really publish?
+WBP_WorkshopMenu,77C3AED34876510A3F5596AE4C2CA6DA,Really unpublish?
+WBP_WorkshopMenu,A434BD49497E6BB50F4338B198A4895D,Remove your puzzle from the Steam workshop
+WBP_WorkshopMenu,A0FE92F2498F98F4D377A8B93DC627CF,Review
+WBP_WorkshopMenu,419AB2674A10985A27B585A7D9B84D28,Save
+WBP_WorkshopMenu,985D2DD74250903A0F5D2295B55133C8,Share your puzzle with the community
+WBP_WorkshopMenu,0469A4E14E901A5B6AB6FFA0DE31D328,Solve your puzzle before publishing it!
+WBP_WorkshopMenu,40E29A4544ABD0585E72F9BA19449D63,Title
+WBP_WorkshopMenu,7593B2434C618979A2415F98FC60EFA4,Unpublish
+WBP_WorkshopMenu,FF7549B246EE2467138FD68C24D0D6FD,Unpublish
+WBP_WorkshopMenu,3ECE59E946D75F2F0A1BDA994DE145CA,Unpublishing...
+WBP_WorkshopMenu,FE4CCEEC4F72600E242BCC9D9C0FE025,View on Steam
+WBP_WorkshopMenu,B1765D5F4CE531847A36D0BFFE8D2618,by {Player Name}
+WorkshopManager,DuplicatePuzzleSuffix, (Copy)
+WorkshopManager,NewPuzzleTitle,Unnamed Puzzle
