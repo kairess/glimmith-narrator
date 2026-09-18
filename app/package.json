@@ -23,7 +23,7 @@
     ],
     "win": {
       "target": "portable",
-      "signAndEditExecutable": false
+      "icon": "src/assets/app-icon.ico"
     }
   },
   "devDependencies": {

@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { pathToFileURL } = require('url');
-const { app, BrowserWindow, screen, ipcMain, Tray, Menu, nativeImage, shell } = require('electron');
+const { app, BrowserWindow, screen, ipcMain, Tray, Menu, nativeImage, shell, dialog } = require('electron');
 
 const { getSavesDir, getVoicesDir } = require('./config');
 const { SaveWatcher } = require('./saveWatcher');
@@ -44,6 +44,7 @@ let statusWindow = null;
 let tray = null;
 let hideTimer = null;
 let currentSavesDir = null;
+let watcher = null;
 
 function computeScale(screenWidth) {
   const raw = screenWidth / REFERENCE_SCREEN_WIDTH;
@@ -127,7 +128,11 @@ function createStatusWindow() {
 // game), so a system tray icon is the only way to actually quit the app or
 // find the log file.
 function createTray() {
-  const icon = nativeImage.createFromPath(path.join(__dirname, 'assets', 'tray-icon.png'));
+  // Windows' notification area expects an .ico (it can render a PNG-sourced
+  // NativeImage as a broken/blank glyph even though Electron loads it fine),
+  // so use the multi-resolution app icon here instead of the PNG used
+  // elsewhere (e.g. the corner status window, which renders inline SVG).
+  const icon = nativeImage.createFromPath(path.join(__dirname, 'assets', 'app-icon.ico'));
   tray = new Tray(icon.resize({ width: 16, height: 16 }));
   tray.setToolTip('Glimmith Narrator (running)');
 
@@ -141,6 +146,27 @@ function createTray() {
     {
       label: 'Open saves folder being watched',
       click: () => currentSavesDir && shell.openPath(currentSavesDir),
+    },
+    { type: 'separator' },
+    {
+      label: 'Reset progress',
+      click: async () => {
+        if (!watcher) return;
+        const { response } = await dialog.showMessageBox({
+          type: 'question',
+          buttons: ['Cancel', 'Reset progress'],
+          defaultId: 0,
+          cancelId: 0,
+          title: 'Glimmith Narrator',
+          message: 'Forget everything this app has already narrated?',
+          detail:
+            'This clears the app\'s own memory of which lines have played, not your game save. ' +
+            'Nothing plays immediately -- lines narrate again the next time their puzzle is actually solved (or reopened/closed) in-game.',
+        });
+        if (response !== 1) return;
+        await watcher.resetState();
+        log('[glimmith-narrator] progress reset via tray menu');
+      },
     },
     { type: 'separator' },
     { label: 'Quit', click: () => app.quit() },
@@ -175,7 +201,7 @@ function startWatcher() {
   currentSavesDir = savesDir;
   const statePath = path.join(app.getPath('userData'), 'flag-state.json');
 
-  const watcher = new SaveWatcher({
+  watcher = new SaveWatcher({
     savesDir,
     lines: LINES,
     statePath,
@@ -194,7 +220,6 @@ function startWatcher() {
 
   watcher.start();
   log(`[glimmith-narrator] watching ${savesDir}`);
-  return watcher;
 }
 
 app.whenReady().then(() => {

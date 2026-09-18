@@ -2,6 +2,10 @@
 node_modules/
 app/dist/
 
+# code signing key material (never commit private keys)
+app/certs/
+*.pfx
+
 # game save data (personal, and not needed to run/build the app)
 *.sav
 saves/checkpoints/

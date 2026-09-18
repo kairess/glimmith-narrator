@@ -52,12 +52,17 @@ class SaveWatcher extends EventEmitter {
       fireOnFirstBaseline: !!line.fireOnFirstBaseline,
     }));
     this.statePath = statePath;
-    // A handful of "welcome" lines (e.g. the tutorial) are for puzzles almost
-    // every real player has already solved before ever installing this app,
-    // so the normal baseline-and-ignore behaviour below would mean they never
-    // play. If this is the very first time the app has ever run, let those
-    // specific lines fire once anyway instead of only silently baselining.
-    this.isFirstEverRun = !fs.existsSync(statePath);
+    // A handful of "welcome" lines (e.g. the tutorial) are for puzzles/letters
+    // whose save entry is written in one shot already-solved (no earlier
+    // "opened but not solved" state to observe first), so the normal
+    // baseline-and-ignore behaviour below would mean they never play for a
+    // save that already has them true the first time this watcher looks at
+    // it -- e.g. a player who finished the tutorial before ever installing
+    // this app, or a fresh save reached after a reset. `duringInitialScan`
+    // only exists to stop the burst of duplicate fires that would otherwise
+    // happen if several save slots already have the same line solved at
+    // startup; it does not gate firing after startup.
+    this.duringInitialScan = true;
     this.firedFirstBaselineLines = new Set();
     this.lastKnownValues = this._loadState(); // Map: `${filename}::${path}::${flagName}` -> boolean
     this.timers = new Map();
@@ -89,8 +94,11 @@ class SaveWatcher extends EventEmitter {
     }
 
     // Establish a baseline from current state before watching for changes, so
-    // a puzzle already solved before this app ever ran doesn't fire on launch.
-    this._scanDirectory();
+    // a puzzle already solved before this app ever ran doesn't fire on launch
+    // (except the fireOnFirstBaseline lines, which are meant to fire here).
+    this._scanDirectory().finally(() => {
+      this.duringInitialScan = false;
+    });
 
     this.watcher = fs.watch(this.savesDir, (eventType, filename) => {
       if (!filename || !SAVE_FILE_RE.test(filename)) return;
@@ -116,7 +124,24 @@ class SaveWatcher extends EventEmitter {
     this.timers.set(filename, timer);
   }
 
-  _scanDirectory() {
+  // Forgets every baseline this watcher has recorded (in memory and on disk)
+  // and re-scans immediately. Unlike the real startup scan, this never fires
+  // a welcome-style line for a flag that's already true -- it only resets
+  // this app's bookkeeping. A flag that's genuinely re-solved afterwards
+  // (in the save, live) still narrates normally either way. Used by the
+  // tray's "Reset progress" menu item.
+  async resetState() {
+    this.lastKnownValues.clear();
+    try {
+      fs.unlinkSync(this.statePath);
+    } catch (err) {
+      if (err.code !== 'ENOENT') throw err;
+    }
+    this.firedFirstBaselineLines.clear();
+    await this._scanDirectory({ silent: true });
+  }
+
+  async _scanDirectory({ silent = false } = {}) {
     let files;
     try {
       files = fs.readdirSync(this.savesDir).filter((f) => SAVE_FILE_RE.test(f));
@@ -124,12 +149,12 @@ class SaveWatcher extends EventEmitter {
       this.emit('error', err);
       return;
     }
-    for (const filename of files) {
-      this._checkFile(filename).catch((err) => this.emit('error', err));
-    }
+    await Promise.all(
+      files.map((filename) => this._checkFile(filename, { silent }).catch((err) => this.emit('error', err)))
+    );
   }
 
-  async _checkFile(filename) {
+  async _checkFile(filename, { silent = false } = {}) {
     const filePath = path.join(this.savesDir, filename);
     let buf;
     try {
@@ -143,22 +168,34 @@ class SaveWatcher extends EventEmitter {
     for (const { path: puzzlePath, flagName, fireOnFirstBaseline } of this.requests) {
       const valueKey = `${puzzlePath}::${flagName}`;
       const value = values.get(valueKey);
-      if (value === null || value === undefined) continue; // not present in this save
-
       const key = `${filename}::${valueKey}`;
+
+      if (value === null || value === undefined) {
+        // Not present in this save. Also drop any cached value: if this key
+        // was cached from an earlier playthrough that reused this filename
+        // (a deleted/replaced save), leaving a stale "already true" baseline
+        // in place would silently swallow the next genuine occurrence.
+        if (this.lastKnownValues.has(key)) {
+          this.lastKnownValues.delete(key);
+          this._saveState();
+        }
+        continue;
+      }
 
       const previous = this.lastKnownValues.get(key);
       if (previous === undefined) {
         // First time we've ever seen this flag: record the baseline silently,
-        // unless this line is flagged to play anyway on the app's very first
-        // run (see the comment in the constructor).
+        // unless this line is flagged to play anyway even when already true
+        // (see the comment in the constructor). During the initial startup
+        // scan, only let one save file fire it, so having e.g. 3 slots that
+        // already solved it doesn't play the line 3 times in a row.
         this.lastKnownValues.set(key, value);
         this._saveState();
         if (
-          this.isFirstEverRun &&
+          !silent &&
           fireOnFirstBaseline &&
           value === true &&
-          !this.firedFirstBaselineLines.has(puzzlePath)
+          !(this.duringInitialScan && this.firedFirstBaselineLines.has(puzzlePath))
         ) {
           this.firedFirstBaselineLines.add(puzzlePath);
           this.emit('triggered', { puzzlePath, flagName, sourceFile: filename });
