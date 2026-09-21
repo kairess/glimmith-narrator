@@ -704,6 +704,10 @@ module.exports = {
     id: 'N70',
     trigger: 'HasBeenSolved',
     verified: true,
+    // Like Tutorial-1, this letter's save entry is written already-solved in
+    // one shot rather than opened-then-solved, so it needs to be allowed to
+    // fire the first time it's observed true instead of only baselining.
+    fireOnFirstBaseline: true,
     textEn:
       'At first, I thought the market had somehow survived. Then I heard the same dropped spoon three times, with the same laugh after it. I stayed to listen a fourth time.',
     textKo:
@@ -714,6 +718,8 @@ module.exports = {
     id: 'N71',
     trigger: 'HasBeenSolved',
     verified: true,
+    // Same one-shot already-solved write pattern as FinalNote/Tutorial-1.
+    fireOnFirstBaseline: true,
     textEn:
       'The Glimmith you are exploring is made from those surviving memories. This is where my repaired windows led me, too. I spent a long time walking these streets.',
     textKo:

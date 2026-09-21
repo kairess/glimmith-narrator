@@ -1,6 +1,6 @@
 {
   "name": "glimmith-narrator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Watches Glimmith save files and plays Elias's narration lines when the matching puzzle is solved.",
   "main": "src/main.js",
   "private": true,
