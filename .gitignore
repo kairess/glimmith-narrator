@@ -24,3 +24,10 @@ __pycache__/
 
 # demo video: too large for git, hosted as a release asset instead (see README)
 /demo.mp4
+
+# story trailer: rendered video is too large for git (hosted externally, see
+# README); fonts are free OFL downloads, and build/ holds render output
+/trailer/*.mp4
+/trailer/fonts/
+/trailer/src/build/
+/trailer/src/stills/

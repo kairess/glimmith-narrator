@@ -24,6 +24,16 @@ Grab the latest portable `.exe` from [Releases](https://github.com/kairess/glimm
 
 Narration is generated with [ElevenLabs](https://elevenlabs.io) using the **Cornelius (British)** voice (`eleven_multilingual_v2` model).
 
+## Story trailer
+
+The whole tale of Glimmith in under four minutes — Elias's narration with Korean subtitles, from the first welcome to the colours that are yours.
+
+[![Story trailer](trailer/poster_title.png)](https://youtu.be/A8jC71NQoqM)
+
+▶️ [Watch the story trailer](https://youtu.be/A8jC71NQoqM)
+
+Every frame and sound is generated from code — GLSL shaders for the stained glass, city and shattering, and numpy synthesis for the score and sound design; no image or video generation models. Source is in [`trailer/src/`](trailer/src/) (`pip install -r requirements.txt`, then `audio.py` → `render.py` → `mux.sh`); it expects the free variable-weight fonts [Noto Serif KR](https://fonts.google.com/noto/specimen/Noto+Serif+KR) and [Cinzel](https://fonts.google.com/specimen/Cinzel) as `trailer/fonts/NotoSerifKR.ttf` and `trailer/fonts/Cinzel.ttf`.
+
 ## Development
 
 See [`app/README.md`](app/README.md) for running from source, testing against a sample save, and building the Windows executable.

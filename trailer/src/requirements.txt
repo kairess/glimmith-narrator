@@ -1,0 +1,7 @@
+numpy
+scipy
+pillow
+moderngl
+glcontext
+matplotlib
+mlx-whisper  # only needed to regenerate align/words.json
